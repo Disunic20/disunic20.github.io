@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Full Tutorial</title>
+    
+</head>
+<head>
+    <body>
+        <form style="text-align: center; position: fixed; width: 100%;">
+            <input class="inp" type="text" placeholder="Search Tags And Codes." id="Search-Tag-Codes-Test" list="Code-Database">
+            <input class="btn" type="button" value="Search" onclick="highlight('0');">
+        </form>
+    <h2 style="text-align: center; color: deepskyblue;">Html All Tags Tutorial [BETA VERSION]</h2>
+
+    
+    <style>
+        @media (min-width: 310px) {
+        .inp{
+            width: 20px;
+        }
+        }
+        body {
+            margin: 4px;
+            background-color: whitesmoke;
+        }
+    
+        .inp {
+            width: 75%;
+            padding: 9px;
+        }
+        .inp:hover{
+            cursor: pointer;
+        }
+        
+        input[type="email"]:focus,
+        input[type="number"]:focus,
+        input[type="search"]:focus,
+        input[type="text"]:focus,
+        input[type="tel"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus {
+            border: 1px solid #33c3f0;
+            outline: 0;
+            }
+    
+        .btn {
+            background: cornflowerblue;
+            color: white;
+            font-size: 16px;
+            padding: 8px;
+            border-color: whitesmoke;
+            border-style: double;
+            box-sizing: border-box;
+            margin-top: 10px;
+        }
+        .btn:hover{
+            cursor: pointer;
+            color: black;
+            background-color: rgb(255, 255, 255);
+        }
+        mark.a0 {
+			color: rgb(255, 255, 255);
+			padding: 5px;
+			background: rgb(230, 8, 23);
+    }
+    </style>
+    <script>
+        function highlight(param) {
+
+            // Select the whole paragraph
+            var ob = new Mark(document.querySelector(".Selected-Text"));
+
+            // First unmark the highlighted word or letter
+            ob.unmark();
+
+            // Highlight letter or word
+            ob.mark(
+                document.getElementById("Search-Tag-Codes-Test").value,
+                { className: 'a' + param }
+            );
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"
+        integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww=="
+        crossorigin="anonymous">
+        </script>
+    <datalist id="Code-Database">
+        <option value="a Element"></option>
+        <option value="abbr"></option>
+        <option value="address"></option>
+        <option value="area"></option>
+        <option value="article"></option>
+        <option value="aside"></option>
+        <option value="audio"></option>
+        <option value="b"></option>
+        <option value="base"></option>
+        <option value="bdi"></option>
+        <option value="bdo"></option>
+        <option value="blockquote"></option>
+        <option value="body"></option>
+        <option value="br"></option>
+        <option value="button"></option>
+        <option value="canvas"></option>
+        <option value="caption"></option>
+        <option value="cite"></option>
+        <option value="code"></option>
+        <option value="col"></option>
+        <option value="data"></option>
+        <option value="datalist"></option>
+        <option value="dd"></option>
+        <option value="del"></option>
+        <option value="details"></option>
+        <option value="dfn"></option>
+        <option value="dialog"></option>
+        <option value="div"></option>
+        <option value="dl"></option>
+        <option value="dt"></option>
+        <option value="em"></option>
+        <option value="embed"></option>
+        <option value="fieldset"></option>
+        <option value="figcaption"></option>
+        <option value="figure"></option>
+        <option value="footer"></option>
+        <option value="form"></option>
+        <option value="h1-h6"></option>
+        <option value="head"></option>
+        <option value="header"></option>
+        <option value="hgroup"></option>
+        <option value="hr"></option>
+        <option value="html"></option>
+        <option value="i"></option>
+        <option value="iframe"></option>
+        <option value="img"></option>
+        <option value="input"></option>
+        <option value="ins"></option>
+        <option value="kbd"></option>
+        <option value="label"></option>
+        <option value="legend"></option>
+        <option value="li"></option>
+        <option value="link"></option>
+        <option value="main"></option>
+        <option value="map"></option>
+        <option value="mark"></option>
+        <option value="meta"></option>
+        <option value="meter"></option>
+        <option value="nav"></option>
+        <option value="noscript"></option>
+        <option value="object"></option>
+        <option value="ol"></option>
+        <option value="opt"></option>
+        <option value="option"></option>
+        <option value="output"></option>
+        <option value="p"></option>
+        <option value="param"></option>
+        <option value="pre"></option>
+        <option value="progress"></option>
+        <option value="q"></option>
+        <option value="rp"></option>
+        <option value="rt"></option>
+        <option value="ruby"></option>
+        <option value="s"></option>
+        <option value="samp"></option>
+        <option value="script"></option>
+        <option value="section"></option>
+        <option value="select"></option>
+        <option value="small"></option>
+        <option value="source"></option>
+        <option value="span"></option>
+        <option value="strong"></option>
+        <option value="style"></option>
+        <option value="sub"></option>
+        <option value="summary"></option>
+        <option value="sup"></option>
+        <option value="table"></option>
+        <option value="tbody"></option>
+        <option value="td"></option>
+        <option value="textarea"></option>
+        <option value="tfoot"></option>
+        <option value="th"></option>
+        <option value="thead"></option>
+        <option value="time"></option>
+        <option value="title"></option>
+        <option value="tr"></option>
+        <option value="track"></option>
+        <option value="ul"></option>
+        <option value="val"></option>
+        <option value="vedio"></option>
+        <option value="wbr"></option>
+        <option value=""></option>
+    </datalist>
+</head>
+ <h2></h2>
+
+<body>
+    <h3 class="c-h3">Codes With Uses:-</h3>
+    <div class="Selected-Text">
+        <div class="a">
+            <p class="Code-Tag">a Element:</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="abbr">
+            <p class="Code-Tag">abbr:</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="address">
+            <p class="Code-Tag">address:</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="area">
+            <p class="Code-Tag">area:</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="article">
+            <p class="Code-Tag">article:</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="aside">
+            <p class="Code-Tag">aside:</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="audio">
+            <p class="Code-Tag">audio:</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <br></br>
+        <div class="b">
+            <p class="Code-Tag">b</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="base">
+            <p class="Code-Tag">base</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="bdi">
+            <p class="Code-Tag">bdi</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="bdo">
+            <p class="Code-Tag">bdo</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="blockquote">
+            <p class="Code-Tag">blockquote</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="body">
+            <p class="Code-Tag">body</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="br">
+            <p class="Code-Tag">br</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="button">
+            <p class="Code-Tag">button</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <br></br>
+        <div class="canvas">
+            <p class="Code-Tag">canvas</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="caption">
+            <p class="Code-Tag">caption</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="cite">
+            <p class="Code-Tag">cite</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="code">
+            <p class="Code-Tag">code</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="col">
+            <p class="Code-Tag">col</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <br></br>
+        <div class="data">
+            <p class="Code-Tag">data</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="datalist">
+            <p class="Code-Tag">datalist</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="dd">
+            <p class="Code-Tag">dd</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="del">
+            <p class="Code-Tag">del</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="details">
+            <p class="Code-Tag">details</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="dfn">
+            <p class="Code-Tag">dfn</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="dialog">
+            <p class="Code-Tag">dialog</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="div">
+            <p class="Code-Tag">div</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="dl">
+            <p class="Code-Tag">dl</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="dt">
+            <p class="Code-Tag">dt</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <br></br>
+        <div class="em">
+            <p class="Code-Tag">em</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="embed">
+            <p class="Code-Tag">embed</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="fieldset">
+            <p class="Code-Tag">fieldset</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="figcaption">
+            <p class="Code-Tag">figcaption</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="figure">
+            <p class="Code-Tag">figure</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="footer">
+            <p class="Code-Tag">footer</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="form">
+            <p class="Code-Tag">form</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <br></br>
+        <div class="h1-h6">
+            <p class="Code-Tag">h1-h6</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="head">
+            <p class="Code-Tag">head</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="header">
+            <p class="Code-Tag">header</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="hgroup">
+            <p class="Code-Tag">hgroup</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="hr">
+            <p class="Code-Tag">hr</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="html">
+            <p class="Code-Tag">html</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <br></br>
+        <div class="i">
+            <p class="Code-Tag">i</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="iframe">
+            <p class="Code-Tag">iframe</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="img-c">
+            <p class="Code-Tag">img</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="input">
+            <p class="Code-Tag">input</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="ins">
+            <p class="Code-Tag">ins</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <br></br>
+        <div class="kbd">
+            <p class="Code-Tag">kbd</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <br></br>
+        <div class="lebel">
+            <p class="Code-Tag">lebel</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="legend">
+            <p class="Code-Tag">legend</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="li">
+            <p class="Code-Tag">li</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="link">
+            <p class="Code-Tag">link</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <br></br>
+        <div class="main">
+            <p class="Code-Tag">main</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="map">
+            <p class="Code-Tag">map</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="mark">
+            <p class="Code-Tag">mark</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="menu">
+            <p class="Code-Tag">menu</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="meta">
+            <p class="Code-Tag">meta</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="meter">
+            <p class="Code-Tag">meter</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <br></br>
+        <div class="nav">
+            <p class="Code-Tag">nav</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="noscript">
+            <p class="Code-Tag">noscript</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <br></br>
+        <div class="object">
+            <p class="Code-Tag">object</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="ol">
+            <p class="Code-Tag">ol</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="opt">
+            <p class="Code-Tag">opt</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="option">
+            <p class="Code-Tag">option</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="output">
+            <p class="Code-Tag">output</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <br></br>
+        <div class="p">
+            <p class="Code-Tag">p</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="param">
+            <p class="Code-Tag">param</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="pre">
+            <p class="Code-Tag">pre</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="progress">
+            <p class="Code-Tag">progress</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <br></br>
+        <div class="q">
+            <p class="Code-Tag">q</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <br></br>
+        <div class="rp">
+            <p class="Code-Tag">rp</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="rt">
+            <p class="Code-Tag">rt</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="ruby">
+            <p class="Code-Tag">ruby</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <br></br>
+        <div class="s">
+            <p class="Code-Tag">s</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="samp">
+            <p class="Code-Tag">samp</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="script">
+            <p class="Code-Tag">script</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="section">
+            <p class="Code-Tag">section</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="select">
+            <p class="Code-Tag">select</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="small">
+            <p class="Code-Tag">small</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="source">
+            <p class="Code-Tag">source</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="span">
+            <p class="Code-Tag">span</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="strong">
+            <p class="Code-Tag">strong</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="style">
+            <p class="Code-Tag">style</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="sub">
+            <p class="Code-Tag">sub</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="summary">
+            <p class="Code-Tag">summary</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="sup">
+            <p class="Code-Tag">sup</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <br></br>
+        <div class="table">
+            <p class="Code-Tag">table</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="tbody">
+            <p class="Code-Tag">tbody</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="td">
+            <p class="Code-Tag">td</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="textarea">
+            <p class="Code-Tag">textarea</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="tfoot">
+            <p class="Code-Tag">tfoot</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="th">
+            <p class="Code-Tag">th</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="thead">
+            <p class="Code-Tag">thead</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="time">
+            <p class="Code-Tag">time</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="title">
+            <p class="Code-Tag">title</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="tr">
+            <p class="Code-Tag">tr</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="track">
+            <p class="Code-Tag">track</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <br></br>
+        <div class="ul">
+            <p class="Code-Tag">ul</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <br></br>
+        <div class="var">
+            <p class="Code-Tag">var</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <div class="video">
+            <p class="Code-Tag">video</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+        <br></br>
+        <div class="wbr">
+            <p class="Code-Tag">wbr</p>
+            <div class="container">
+                <p class="c-p-h">How To Use</p>
+                <img class="img" src="" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="end-nav-bar">
+        <ul style="color: rgb(89, 85, 85);">.</ul>
+        <p class="Link-A">
+            <a class="Link-5" href="./index.html">Home</a>
+            <a class="Link-1" href="./about.html">About</a>
+            <a class="Link-2" href="./faqs.html">FaQs</a>
+            <a class="Link-3" href="./lisence.html">Lisence</a>
+            <a class="Link-4" href="./creator.html">Creator</a>
+            <a class="Link-6" href="./Downloads.html">Downloads</a>
+        </p>
+        <p class="Link-B">
+            <a href=""><img src="./Facebook.png" alt="" style="height: 30px; width: 33px; border-radius: 4px;"></a>
+            <a style="margin-left: 30px;" href=""><img src="./Instagram.jpeg" alt=""
+                    style="height: 30px; width: 33px; border-radius: 4px;"></a>
+            <a style="margin-left: 30px;" href=""><img src="./Twitter.jpeg" alt=""
+                    style="height: 30px; width: 33px; border-radius: 4px;"></a>
+        </p>
+        <p class="Copyright-Disunic">Copyright © 2021.All rights reserved By Disunic.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <style>
+        .c-h3 {
+            font-weight: 600;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .Code-Tag{
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 10px;
+            color: dodgerblue;
+        }
+        .container{
+            width: 95%;
+            height: auto;
+            background-color: white;
+            color: black;
+            padding: 1px;
+            margin: auto;
+            text-align: center;
+            display: none;
+            /* add on next update */
+        }
+        .c-p-h{
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-top: 5px;
+        }
+        .img{
+            width: 80%;
+        }
+        @media (min-width: 900px) {
+        .img{
+        width: 50% ;
+
+    }
+    }
+    .end-nav-bar{
+    position: relative;
+    top: 60px;
+    height: 180px;
+}
+.end-nav-bar p{
+    font-size: 15px;
+    color: cornflowerblue;
+}
+.Link-A{
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+.Link-1{
+    color: black;
+    margin-left: 20px;
+    text-decoration: none;
+}
+.Link-2{
+    color: black;
+    margin-left: 20px;
+    text-decoration: none;
+}
+.Link-3{
+    color: black;
+    margin-left: 20px;
+    text-decoration: none;
+}
+.Link-4{
+    color: black;
+    margin-left: 20px;
+    text-decoration: none;
+}
+.Link-5{
+    color: black;
+    text-decoration: none;
+}
+.Link-6{
+    color: black;
+    margin-left: 20px;
+    text-decoration: none;
+}
+.Copyright-Disunic{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.Link-B{
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+    </style>
+</body>
+
+</html>

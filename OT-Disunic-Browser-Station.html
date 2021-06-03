@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disunic Broser Station</title>
+</head>
+<body>
+    
+    <div class="main">
+        <h2 class="hh2">Disunic Browser Station</h2>
+        <div class="normal">
+            <h3>Google</h3>
+            <div class="Google" id="SearchBox">
+                <form action="http://google.com/search" method="get">
+                    <input type="text" placeholder="Search With Google..." class="textinp" name="q">
+                    <button type="submit" class="btninp"><img src="./Google.png" alt="" class="imgs"></button>
+                </form>
+            </div>
+            <h3>Bing</h3>
+            <div class="Bing" id="SearchBox">
+                <form action="http://bing.com/search" method="get">
+                    <input type="text" placeholder="Search With Bing..." class="textinp" name="q">
+                    <button type="submit" class="btninp"><img src="./Bing.jpg" alt="" class="imgs"></button>
+                </form>
+            </div>
+            <h3>Yahoo!</h3>
+            <div class="Yahoo!" id="SearchBox">
+                <form action="http://search.yahoo.com/search" method="get">
+                    <input type="text" placeholder="Search With Yahoo!..." class="textinp" name="q">
+                    <button type="submit" class="btninp"><img src="./Yahoo.png" alt="" class="imgs" ></button>
+                </form>
+            </div>
+            <h3>Ecosia</h3>
+            <div class="Ecosia" id="SearchBox">
+                <form action="http://ecosia.com/search" method="get">
+                    <input type="text" placeholder="Search With Ecosia..." class="textinp" name="q">
+                    <button type="submit" class="btninp"><img src="./Ecosia.jpg" alt="" class="imgs"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="Setting">
+        <button class="sett-btn" onclick="showsettings()" id="setting-i">Settings</button>
+            <button onclick="showtheme()" class="the" id="the">Theme</button>
+            <form method="POST" name="background" class="bgform" id="bgform">
+                <li><input class="bgbutton" type="button" value="White" onclick="document.bgColor='White'"></li>
+                <li><input class="bgbutton" type="button" value="Black" onclick="document.bgColor='Black'"></li>
+            </form>
+    </div>
+    <div class="end-nav-bar">
+        <ul style="color: rgb(89, 85, 85);">.</ul>
+        <p class="Link-A">
+            <a class="Link-5" href="./index.html">Home</a>
+            <a class="Link-1" href="./about.html">About</a>
+            <a class="Link-2" href="./faqs.html">FaQs</a>
+            <a class="Link-4" href="./creator.html">Creator</a>
+            <a class="Link-6" href="./Downloads.html">Downloads</a>
+        </p>
+        <p class="Link-B">
+            <a href="http://m.facebook.com/Disunic"><img src="./Facebook.png" alt=""
+                    style="height: 30px; width: 33px; border-radius: 4px;"></a>
+            <a style="margin-left: 30px;" href=""><img src="./Instagram.jpeg" alt=""
+                    style="height: 30px; width: 33px; border-radius: 4px;"></a>
+            <a style="margin-left: 30px;" href=""><img src="./Twitter.jpeg" alt=""
+                    style="height: 30px; width: 33px; border-radius: 4px;"></a>
+        </p>
+        <p class="Copyright-Disunic">Copyright © 2021.All rights reserved By Disunic.</p>
+        <p>Disunic Browser Station - Beta Version</p>
+    </div>
+</body>
+<style>
+    .hh2{
+        color: rgb(4, 175, 249);
+        font-size: 25px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    h3{
+        color: dodgerblue;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        letter-spacing: 1px;
+        font-size: 20px;
+    }
+    .main{
+        text-align: center;
+    }
+    .normal{
+        text-align: center;
+    }
+    form{
+        display: inline-flex;
+        width: 100%;
+        height: 40px;
+    }
+    .Setting{
+        margin-top: 10px;
+        margin-left: 40px;
+    }
+    .Setting:hover{
+        opacity: 90%;
+    }
+    .sett-btn{
+        background-color: rgb(244, 244, 244);
+        border: none;
+        padding: 10px 10px;
+        font-size: 16px;
+    }
+    .sett-btn:focus{
+        border: 1px solid rgb(0, 143, 176);
+    }
+    .the{
+        display: none;
+        margin-top: 10px;
+        background-color: rgb(244, 244, 244);
+        border: none;
+        padding: 10px 10px;
+        font-size: 16px;
+    }
+    .bgform{
+        display: none;
+        margin-top: 10px;
+        
+    }
+    .bgbutton{
+        background-color: rgb(70, 166, 250);
+        color: black;
+        padding: 10px 10px;
+        border: none;
+        outline: 0;
+        list-style-type: circle;
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    .bgbutton:hover{
+        opacity: 80%;
+    }
+    #SearchBox{
+        margin: auto;
+        height: 40px;
+        width: 90%;
+        border: 1px solid black;
+        padding: 8px;
+        border-radius: 12px;
+        border-color: rgb(24, 166, 255);
+        /* box-shadow:  1px 4px 8px 2px rgb(245, 243, 243); */
+    }
+    #SearchBox:hover{
+        border-color: rgb(1, 103, 255);
+    }
+    .textinp{
+        width: 100%;
+        border: none;
+        outline: 0;
+        padding: 0px 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+    .btninp{
+        width: auto;
+        border: none;
+        outline: 0;
+        padding: 0px;
+        text-align: end;
+        margin-right: 5px;
+        background-color: white;
+        cursor: pointer;
+    }
+    .btninp:hover{
+        opacity: 60%;
+    }
+    .btninp:focus{
+        opacity: 60%;
+    }
+    .imgs{
+        width: auto;
+        height: 40px;
+    }
+    .end-nav-bar{
+        text-align: center;
+        top: 25px;
+        position: relative;
+    }
+    .end-nav-bar p {
+        color: cornflowerblue;
+    }
+    .end-nav-bar a{
+        margin-left: 10px;
+        text-decoration: none;
+        color: rgb(0, 136, 255);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+    }
+    .end-nav-bar a:hover{
+        text-decoration: underline;
+    }
+    .Link-B a:hover{
+        opacity: 60%;
+    }
+</style>
+<script>
+    function showsettings() {
+        var y = document.getElementById("the");
+        if (y.style.display === "none") {
+            y.style.display = "block";
+        } else {
+            y.style.display = "none";
+        }
+    }
+    function showtheme() {
+        var x = document.getElementById("bgform");
+        if (x.style.display === "none") {
+           x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
+</html>

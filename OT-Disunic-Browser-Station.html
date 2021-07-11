@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disunic Broser Station</title>
+</head>
+<body>
+    
+    <div class="main">
+        <h2 class="hh2">Disunic Browser Station</h2>
+        <h2 class="h22">Normal Browsers</h2>
+        <div class="normal">
+            <h3>Google</h3>
+            <div class="Google" id="SearchBox">
+                <form action="http://google.com/search" method="get">
+                    <input type="text" placeholder="Search With Google..." class="textinp" name="q">
+                    <button type="submit" class="btninp"><img src="./Google.png" alt="" class="imgs"></button>
+                </form>
+            </div>
+            <h3>Bing</h3>
+            <div class="Bing" id="SearchBox">
+                <form action="http://bing.com/search" method="get">
+                    <input type="text" placeholder="Search With Bing..." class="textinp" name="q">
+                    <button type="submit" class="btninp"><img src="./Bing.jpg" alt="" class="imgs"></button>
+                </form>
+            </div>
+            <h3>Yahoo!</h3>
+            <div class="Yahoo!" id="SearchBox">
+                <form action="http://search.yahoo.com/search" method="get">
+                    <input type="text" placeholder="Search With Yahoo!..." class="textinp" name="q">
+                    <button type="submit" class="btninp"><img src="./Yahoo.png" alt="" class="imgs" ></button>
+                </form>
+            </div>
+            <h3>Ecosia</h3>
+            <div class="Ecosia" id="SearchBox">
+                <form action="http://ecosia.com/search" method="get">
+                    <input type="text" placeholder="Search With Ecosia..." class="textinp" name="q">
+                    <button type="submit" class="btninp"><img src="./Ecosia.jpg" alt="" class="imgs"></button>
+                </form>
+            </div>
+        </div>
+        <br>
+        <h2 class="h22">Dark Web Browsers</h2>
+        <div class="dark">
+            <h3>Start Page</h3>
+            <div class="Startpage" id="SearchBox">
+                <form action="http://startpage.com/search" method="get">
+                    <input type="text" placeholder="Search With Startpage..." class="textinp" name="q">
+                    <button type="submit" class="btninp"><img src="./StartPage.jpg" alt="" class="imgs"></button>
+                </form>
+            </div>
+            <h3>DuckDuckGo</h3>
+            <div class="DuckDuckGo" id="SearchBox">
+                <form action="http://duckduckgo.com/" method="get">
+                    <input type="text" placeholder="Search With DuckDuckGo..." class="textinp" name="q">
+                    <button type="submit" class="btninp"><img src="./DuckDuckGo.png" alt="" class="imgs"></button>
+                </form>
+            </div>
+            <h3>Metager</h3>
+            <div class="DuckDuckGo" id="SearchBox">
+                <form action="http://metager.org/meta/meta.ger3" method="get">
+                    <input type="text" placeholder="Search With Metager..." class="textinp" name="eingabe">
+                    <button type="submit" class="btninp"><img src="./Metager.png" alt="" class="imgs"></button>
+                </form>
+            </div>
+        </div>
+        <br>
+        <span>Themes</span>
+        <br>
+            <button class="br" onclick="document.bgColor='White'">Light</button>
+            <button class="br" onclick="document.bgColor='Black'">Dark</button>
+    </div>
+    <div class="end-nav-bar">
+        <!-- <ul style="color: rgb(89, 85, 85);">.</ul> -->
+        <p class="Link-A">
+            <a class="Link-5" href="./index.html">Home</a>
+            <!-- <a class="Link-2" href="./faqs.html">FaQs</a> -->
+            <a class="Link-4" href="./creator.html">Developers</a>
+            <a class="Link-6" href="./Downloads.html">Download</a>
+        </p>
+        <p class="Copyright-Disunic">Disunic - 2021 All Rights Reserved.</p>
+        <a href="http://">
+        <p style="margin-bottom: 30px;">Disunic Browser Station - 1.5.0[Updated]</p>
+        </a>
+    </div>
+</body>
+<style>
+    .hh2{
+        color: rgb(4, 175, 249);
+        font-size: 25px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .h22{
+        background-color: aqua;
+        margin: auto;
+        display: block;
+        width: 60%;
+    }
+    h3{
+        color: dodgerblue;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        letter-spacing: 1px;
+        font-size: 20px;
+    }
+    .main{
+        text-align: center;
+    }
+    .main span{
+        color: cornflowerblue;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: block;
+    }
+    .main .br{
+        padding: 8px 10px;
+        background: transparent;
+        color: cornflowerblue;
+        background-origin: padding-box;
+        border: 1px solid cornflowerblue;
+        outline: 0;
+    }
+    .main .br:hover{
+        opacity: 80%;
+    }
+    .normal{
+        text-align: center;
+    }
+    .dark{
+        text-align: center;
+    }
+    form{
+        display: inline-flex;
+        width: 100%;
+        height: 40px;
+    }
+    #SearchBox{
+        margin: auto;
+        height: 40px;
+        width: 90%;
+        border: 1px solid black;
+        padding: 8px;
+        border-radius: 12px;
+        border-color: rgb(24, 166, 255);
+        /* box-shadow:  1px 4px 8px 2px rgb(245, 243, 243); */
+    }
+    #SearchBox:hover{
+        border-color: rgb(1, 103, 255);
+    }
+    .textinp{
+        width: 100%;
+        border: none;
+        outline: 0;
+        padding: 0px 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+    .btninp{
+        width: auto;
+        border: none;
+        outline: 0;
+        padding: 0px;
+        text-align: end;
+        margin-right: 5px;
+        background-color: white;
+        cursor: pointer;
+    }
+    .btninp:hover{
+        opacity: 60%;
+    }
+    .btninp:focus{
+        opacity: 60%;
+    }
+    .imgs{
+        width: auto;
+        height: 40px;
+    }
+    .end-nav-bar{
+        text-align: center;
+        top: 15px;
+        position: relative;
+        margin-bottom: 100px;
+    }
+    .end-nav-bar p {
+        color: cornflowerblue;
+    }
+    .end-nav-bar a{
+        margin-left: 15px;
+        text-decoration: none;
+        color: rgb(0, 136, 255);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+    }
+    .end-nav-bar a:hover{
+        text-decoration: underline;
+    }
+    .Link-B a:hover{
+        opacity: 60%;
+    }
+</style>
+<script>
+    function showsettings() {
+        var y = document.getElementById("the");
+        if (y.style.display === "none") {
+            y.style.display = "block";
+        } else {
+            y.style.display = "none";
+        }
+    }
+    function showtheme() {
+        var x = document.getElementById("bgform");
+        if (x.style.display === "none") {
+           x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
+</html>

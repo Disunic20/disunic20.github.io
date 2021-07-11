@@ -1,0 +1,134 @@
+    @media (min-width: 200px){
+        .Section3 audio{
+            width: 150px;
+        }
+        .Nav-Bar{
+            height: 250px;
+        }
+        .te a{
+            padding: 10px;
+        }
+    }
+    @media (min-width: 250px){
+        .Section3 audio{
+            width: 200px;
+        }
+        .Nav-Bar{
+            height: 240px;
+        }
+        .te a{
+            padding: 15px;
+        }
+        
+    }
+    @media (min-width: 300px){
+        .Section1A .a9{
+            display: none;
+        }
+        .Section1A .a6{
+            display: none;
+        }
+        .Section3 audio{
+            width: 250px;
+        }
+        .Nav-Bar{
+            height: 250px;
+        }
+        .te a{
+            padding: 5px;
+        }
+    }
+    @media (min-width: 370px){
+        .Section3 audio{
+            width: 280px;
+        }
+        .Nav-Bar{
+            height: 210px;
+        }
+        .te a{
+            padding: 10px;
+        }
+    }
+    @media (min-width: 400px){
+        .Section1A .a8{
+            display: none;
+        }
+        .Section1A .a6{
+            display: none;
+        }
+        .Section1A .a9{
+            display: contents;
+        }
+        .Section2B div{
+            margin: 3px 20px 0px 0px;
+        }
+        .Section2B div img{
+        width: 90px;
+        height: 80px;
+        }
+        .Nav-Bar{
+            height: 200px;
+        }
+        .te a{
+            padding: 15px;
+        }
+        
+    }
+    @media (min-width: 486px){
+        .Section1A .a8{
+            display: contents;
+        }
+        .Section1A .a6{
+            display: contents;
+        }
+        .Section2B div{
+            margin: 3px 40px 0px 0px;
+        }
+        .Section3 audio{
+            width: 350px;
+        }
+    }
+    @media (min-width: 682px){
+        .Section1A .a5 {
+            display: none;
+        }
+        .Section1A .a6 {
+            display: none;
+        }
+        .Section1A .a7 {
+            display: none;
+        }
+        .Section1A .a3 {
+            display: none;
+        }
+        .Section2B div{
+            margin: 3px 50px 0px 0px;
+        }
+    }
+    @media (min-width: 800px){
+        .Section1A .a7{
+            display: contents;
+        }
+        .Section2B div{
+            margin: 3px 50px 0px 0px;
+        }
+    }
+    @media (min-width: 900px){
+        .Section1A .a5{
+            display: contents;
+        }
+    }
+    @media (min-width: 1000px){
+        .Section1A .a3{
+            display: contents;
+        }
+        .Section1A .a6{
+            display: contents;
+        }
+        .Section3 br{
+            display: none;
+        }
+        .Section2B div{
+            margin: 3px 50px 0px 0px;
+        }
+    }

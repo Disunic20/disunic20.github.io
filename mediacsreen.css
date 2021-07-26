@@ -1,0 +1,174 @@
+    @media (min-width: 200px){
+        .Section3 audio{
+            width: 150px;
+        }
+        .Nav-Bar{
+            height: 250px;
+        }
+        .te a{
+            padding: 10px;
+        }
+        .Section2B div img{
+        width: 150px;
+        height: 150px;
+    }
+    }
+    @media (min-width: 250px){
+        .Section3 audio{
+            width: 200px;
+        }
+        .Nav-Bar{
+            height: 240px;
+        }
+        .te a{
+            padding: 15px;
+        }
+        
+    }
+    @media (min-width: 300px){
+        .Section1A .a9{
+            display: none;
+        }
+        .Section1A .a6{
+            display: none;
+        }
+        .Section3 audio{
+            width: 250px;
+        }
+        .Nav-Bar{
+            height: 250px;
+        }
+        .te a{
+            padding: 5px;
+        }
+    }
+    @media (min-width: 370px){
+        .Section3 audio{
+            width: 280px;
+        }
+        .Nav-Bar{
+            height: 210px;
+        }
+        .te a{
+            padding: 10px;
+        }
+    }
+    @media (min-width: 400px){
+        .Section1A .a8{
+            display: none;
+        }
+        .Section1A .a6{
+            display: none;
+        }
+        .Section1A .a9{
+            display: contents;
+        }
+        .Nav-Bar{
+            height: 200px;
+        }
+        .te a{
+            padding: 15px;
+        }
+        /* .wikipedia a img{
+        
+        }
+        .search a img{
+
+        }
+        .browser a img{
+
+        } */
+        .Section2B div img{
+        width: 220px;
+        height: 220px;
+    }
+        
+    }
+    @media (min-width: 486px){
+        .Section1A .a8{
+            display: contents;
+        }
+        .Section1A .a6{
+            display: contents;
+        }
+        .Section3 audio{
+            width: 350px;
+        }
+    }
+    @media (min-width: 500px){
+         .wikipedia a img{
+        margin-right: 5px;
+        }
+        /* .search a img{
+
+        } */
+        .browser a img{
+            margin-left: 5px;
+        }
+    }
+    @media (min-width: 610px){
+        .wikipedia a img{
+        margin-right: 10px;
+        }
+        /* .search a img{
+
+        } */
+        .browser a img{
+            margin-left: 10px;
+        }
+    }
+    @media (min-width: 682px){
+        .Section1A .a5 {
+            display: none;
+        }
+        .Section1A .a6 {
+            display: none;
+        }
+        .Section1A .a7 {
+            display: none;
+        }
+        .Section1A .a3 {
+            display: none;
+        }
+        /* .wikipedia a img{
+        
+        }
+        .search a img{
+
+        }
+        .browser a img{
+
+        } */
+        
+    }
+    @media (min-width: 800px){
+        .Section1A .a7{
+            display: contents;
+        }
+        
+    }
+    @media (min-width: 900px){
+        .Section1A .a5{
+            display: contents;
+        }
+    }
+    @media (min-width: 1000px){
+        .Section1A .a3{
+            display: contents;
+        }
+        .Section1A .a6{
+            display: contents;
+        }
+        .Section3 br{
+            display: none;
+        }
+        .wikipedia a img{
+        margin-right: 20px;
+        }
+        /* .search a img{ */
+            /* none */
+        /* } */
+        .browser a img{
+            margin-left: 20px;
+        }
+    }

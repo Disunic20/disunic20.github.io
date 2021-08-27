@@ -58,6 +58,7 @@
         cursor: pointer;
         margin: 4px;
         outline: 0;
+        transition: background 1s;
     }
     .d-btn:hover{
         border: 2px solid rgb(255, 255, 255);

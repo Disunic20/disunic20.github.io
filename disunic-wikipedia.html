@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wikipedia From Disunic - Disunic.com</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This Is The Best Wikipedia Search Engine . Search With More Privecy And Sefe search | Ever. | Disunic.com">
+    <meta name="keyword" content="Wikipedia From Disunic,Disunic Wikipedia,wikipedia,wiki,pedia,wikisearch,wikipedia search,wikipedia search engine">
+    <link href="./googlef0650ebb0e2691f3.html">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="wrap">
+        <div class="searchfunction">
+            <!-- <br> -->
+            <h1 class="Title">Wikipedia From Disunic</h1>
+            <br>
+            <input type="text" placeholder="Type Here What Are You Searching ..." id="query">
+            <button class="custom-btn btn-3" id="search"><span>Wiki Search</span></button>
+            <div class="theme">
+            <span>Themes</span>
+            <button onclick="document.bgColor='White'">Light</button><button onclick="document.bgColor='Black'">Dark</button>
+            <p class="rp" style="display: none; height: 8px;">I Am Found This Results</p>
+            <a class="Back" href=""><button>Back To Home</button></a>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <a class="a1" href="./index.html">Disunic</a>
+            <a class="a2" href="./creator.html">Developers</a>
+            <a class="a3" href="./lisence.html">Lisence</a>
+            <a class="a4" href="./Downloads.html">Download</a>
+        </div>
+        <div class="result">
+        </div>
+        <div class="copyright">
+            <p>Disunic - 2021 All Rights Reserved.</p>
+            <a href="./wikiupdate.html">Wikipedia - v2.5.25[Updated]</a>
+        </div>
+        <div class="About" style="display: none;">
+            <p>Thanks For Using ❤</p>
+            <a href="./wikiupdate.html">Wikipedia - v2.5.25[Updated]</a>
+        </div>
+    </div>
+</body>
+<style>
+    body{
+        font-size: 1.5em;
+        line-height: 1.6;
+        font-weight: 400;
+        font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: #222;
+        margin: 0px;
+        transition: background 1s;
+    }
+    .wrap{
+        margin: 80px 0px 0px 0px;
+    }
+    .searchfunction{
+        text-align: center;
+    }
+    .Title{
+        color: #33c3f0;
+        font-size: 30px;
+    }
+    input{
+        height: 40px;
+        width: 70%;
+        border-radius: 35px;
+        border: 1px solid rgb(6, 151, 242);
+        padding: 15px 14px;
+        box-sizing: border-box;
+        outline: 0;
+        box-shadow: 1px 1px 15px 2px white;
+        display: block;
+        margin: 0 auto;
+        transition: height 1s, width 1s, border-radius 1s;
+    }
+    input:focus{
+        height: 45px;
+        width: 80%;
+        border-radius: 40px;
+    }
+    .custom-btn {
+        width: 130px;
+        height: 40px;
+        color: #fff;
+        border-radius: 5px;
+        padding: 10px 25px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+        7px 7px 20px 0px rgba(0,0,0,.1),
+        4px 4px 5px 0px rgba(0,0,0,.1);
+        outline: none;
+}
+    .btn-3 {
+        background: rgb(0,172,238);
+        background: linear-gradient(0deg, rgb(248, 85, 191) 0%, rgb(89, 186, 227) 100%);
+        width: 130px;
+        height: 40px;
+        line-height: 42px;
+        text-transform: uppercase;
+        padding: 0;
+        font-size: 13px;
+        margin: 30px 0px ;
+        border: none;
+}
+        .btn-3 span {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        }
+        .btn-3:before,
+        /* .btn-3:focus, */
+        .btn-3:after {
+        position: absolute;
+        content: "";
+        right: 0;
+        top: 0;
+        background: rgba(2,126,251,1);
+        transition: all 0.3s ease;
+        }
+        .btn-3:before {
+        height: 0%;
+        width: 2px;
+        }
+        .btn-3:after {
+        width: 0%;
+        height: 2px;
+        }
+        .btn-3:hover{
+        background: transparent;
+        box-shadow: none;
+        }
+        .btn-3:hover:before {
+        height: 100%;
+        }
+        .btn-3:hover:after {
+        width: 100%;
+        }
+        .btn-3 span:hover{
+        color: rgba(2,126,251,1);
+        }
+        .btn-3 span:focus{
+        color: rgba(2,126,251,1);
+        }
+
+        .btn-3 span:before,
+        .btn-3 span:focus,
+        .btn-3 span:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        background: rgb(2,126,251,1);
+        transition: all 0.3s ease;
+        }
+        .btn-3 span:before {
+        width: 2px;
+        height: 0%;
+        }
+        .btn-3 span:after {
+        width: 0%;
+        height: 2px;
+        }
+        .btn-3 span:hover:before {
+        height: 100%;
+        }
+        .btn-3 span:hover:after {
+        width: 100%;
+        }
+    .result{
+        margin: 5px;
+        line-height: 20px;
+        margin-top: 20px;
+    }
+    .article {
+        margin-bottom: 20px;
+        padding: 20px 20px;
+        margin: 8px;
+        box-shadow: 1px 1px 10px 1px cornflowerblue;
+        /* text-align: center; */
+    }
+    .article a{
+        text-decoration: none;
+        margin-top: 0px;
+    }
+    .article h2{
+        font-size: 22px;
+        color: #0187fc;
+        text-decoration: none;
+        margin: 3px;
+        margin-top: 40px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-bottom: 10px;
+    }
+    .article p{
+        margin-top: 0px;
+        font-size: 17px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-top: 15px;
+    }
+    .article .snippet{
+        color: #0776fe;
+        font-size: 20px;
+        margin-top: 0px;
+    }
+    .article .snippet img{
+        background-color: white;
+        width: 90px;
+        margin-top: 10px;
+    }
+    .article h2:hover{
+        text-decoration: underline;
+        background-color: transparent;
+        outline: 0;
+    }
+    .theme span {
+        font-size: 15px;
+        color: cornflowerblue;
+        display: block;
+    }
+    .theme button{
+        padding: 8px 10px;
+        margin: 0 auto;
+        margin: 10px 5px;
+        border: 1px solid cornflowerblue;
+        background: transparent;
+        color: rgb(58, 202, 255);
+        outline: 0;
+        cursor: pointer;
+    }
+    .theme button:hover{
+        opacity: 85%;
+    }
+    .rp{
+        color: rgb(6, 151, 242);
+    }
+    .error p{
+        color: cornflowerblue;
+    }
+    .error .p1{
+        text-align: center;
+    }
+    
+    .error li{
+        font-size: 14px;
+        color: rgb(71, 129, 238);
+    }
+    .nav-bar{
+        text-align: center;
+    }
+    .nav-bar a{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 15px;
+        color:rgb(6, 151, 242);
+        text-decoration: none;
+        margin: 0px 10px;
+    }
+    .Back{
+        display: none;
+    }
+    .Back button{
+        padding: 8px 8px;
+    }
+    .nav-bar a:hover{
+        text-decoration: underline;
+    }
+    .nav-bar a:focus{
+        text-decoration: underline;
+    }
+    .copyright{
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 15px;
+    }
+    .copyright p{
+        color: rgb(31, 144, 243);
+    }
+    .copyright a{
+        color: cornflowerblue;
+        text-decoration: none;
+    }
+    .copyright a:hover{
+        text-decoration: underline;
+    }
+    .copyright a:focus{
+        text-decoration: underline;
+    }
+    .About{
+        text-align: center;
+        box-shadow: 0px -4px 15px 1px cornflowerblue;
+        margin-bottom: 1px;
+        padding: 1px;
+        margin-top: 10px;
+    }
+    .About p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+        color: cornflowerblue;
+    }
+    .About a{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+        text-decoration: none;
+        color: cornflowerblue;
+        
+    }
+    @media (min-width: 300px) {
+        .btn-3{
+            margin: 30px 50px;
+        }
+        .nav-bar a{
+        
+        margin: 0px 5px;
+        }
+    }
+    @media (min-width: 400px) {
+        
+        .nav-bar a{
+        
+        margin: 0px 10px;
+        }
+    }
+    @media (min-width: 500px) {
+        .btn-3{
+            margin: 30px 100px;
+        }
+    }
+    @media (min-width: 500px) {
+        input{
+            width: 60%;}
+            .btn-3{
+                margin: 30px 200px;
+            }
+        }
+    
+    @media (min-width: 600px) {
+        .btn-3{
+        margin: 30px 150px;}
+    }
+    @media (min-width: 700px) {
+        input{
+            width: 50%;
+        }
+        .btn-3{
+            margin: 30px 250px;
+        }
+    }
+    @media (min-width: 900px) {
+        input{
+            width: 50%;
+            }
+        .btn-3{
+            margin: 30px 300px;
+        }
+        }
+</style>
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script>
+    $(document).ready(function () {
+            function getArticles(userQuery) {
+                var wikiApiUrl = 'https://en.wikipedia.org/w/api.php?format=json&action=query&generator=search&gsrnamespace=0&gsrlimit=10&prop=pageimages|extracts&pilimit=max&exintro&explaintext&exsentences=1&exlimit=max&gsrsearch=' + userQuery + '&callback=?';
+                $.getJSON(wikiApiUrl, function (articles) {
+                    renderArticlesMarkup(articles);
+                });
+            }
+
+            function renderArticlesMarkup(articles) {
+                var articlesMarkup = '';
+                if (articles.query === undefined) {
+                    articlesMarkup += '<div class="error"><p class="p1">Your Keyword did not match our Database.</p> <p class="p2">Suggestions:</p><li>Make sure that all words are spelled correctly.</li><li>Try different keywords.</li><li>Try more general keywords.</li></div>';
+                }
+                else {
+                    var pages = articles.query.pages;
+                    for (var property in pages) {
+                        if (pages.hasOwnProperty(property)) {
+                            articlesMarkup += '<div class="article"><a href="https://en.wikipedia.org/wiki/' + pages[property].title + '" target="_blank">' + '<h2>' + pages[property].title + '</h2><div class="snippet"></a>';
+                            if (pages[property].thumbnail !== undefined) {
+                                articlesMarkup += '<img src="' + pages[property].thumbnail.source + '">';
+                            }
+                            articlesMarkup += '<p>' + pages[property].extract + '</p></div></a></div>';
+                        }
+                    }
+                    $('.wrap').css('margin-top', '0');
+                    $('.Title').css('display', 'none');
+                    $('.nav-bar').css('display', 'none');
+                    $('.rp').css('display', 'block');
+                    $('.Back').css('display', 'block');
+                    // $('.Back').css('margin', 'auto');
+                    $('.Back').css('width', 'fit-content');
+                    $('.searchfunction').css('box-shadow', '1px 1px 10px 2px  cornflowerblue');
+                    $('#search').css('text-aling', 'left');
+                    $('.copyright').css('display', 'none');
+                    $('.About').css('display', 'block');
+
+                }
+                $('.result').html(articlesMarkup);
+            }
+
+            $('#search').on('click', function () {
+                getArticles($('#query').val());
+            });
+
+            $('#query').keydown(function (event) {
+                if (event.which == 13) {
+                    getArticles($('#query').val());
+                }
+            });
+
+            $('#searh').on('click', function () {
+                window.open('https://en.wikipedia.org/wiki/Special:Random', '_blank');
+            });
+
+        });
+
+</script>
+</html>

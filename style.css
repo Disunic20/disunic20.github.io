@@ -24,7 +24,7 @@
         height: 738px;
         background-size: cover;
         background-position: 15%;
-        background-attachment: fixed;
+        /*background-attachment: fixed;*/
         background-blend-mode: multiply;
         background-color: rgb(45, 45, 255);
         text-align: center;

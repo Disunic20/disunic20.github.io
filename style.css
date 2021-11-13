@@ -227,7 +227,7 @@
         cursor: pointer;
         box-shadow: 2px 2px 2px 2px cornflowerblue; 
         transition: box-shadow 1s;
-        margin: 40px 15px 0 15px;
+        margin: 40px 32px 0 32px;
         font-weight: 600;
     }
     .Section1i button:hover{

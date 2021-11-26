@@ -341,7 +341,7 @@
     <script>
         $(document).ready(function () {
             function getArticles(userQuery) {
-                var wikiApiUrl = 'https://en.wikipedia.org/w/api.php?format=json&action=query&generator=search&gsrnamespace=0&gsrlimit=10&prop=pageimages|extracts&pilimit=max&exintro&explaintext&exsentences=1&exlimit=max&gsrsearch=' + userQuery + '&callback=?';
+                var wikiApiUrl = 'https://en.wikipedia.org/w/api.php?format=json&action=query&generator=search&gsrnamespace=0&gsrlimit=10&prop=pageimages|extracts&pilimit=max&exintro&explaintext&exsentences=2&exlimit=max&gsrsearch=' + userQuery + '&callback=?';
                 $.getJSON(wikiApiUrl, function (articles) {
                     renderArticlesMarkup(articles);
                 });

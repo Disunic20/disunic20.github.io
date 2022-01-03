@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DisunicX</title>
+    <link rel="stylesheet" href="os.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <!-- <audio src="./audio.mp3" autoplay    ></audio> -->
+</head>
+<body>
+    <!-- <audio src="./audio.mp3" autoplay ></audio> -->
+    <div class="logo">
+        <img src="./disunicx.png" alt="DisunicX">
+    </div>
+    <div class="searchbar">
+        <div class="searchfunction">
+            <form action="https://google.com/search" method="get">
+                <img src="./GLogo.png" alt="" style="margin:auto;height: 35px;">
+                <input type="text" placeholder="Type Here What Are You Searching ..." name="q" autocomplete="off">
+                <button id="search"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="dv">DisunicX - Version 1.2.0</div>
+    <div class="cp">Disunic - 2022 All Rights Reserved.</div>
+    <div id="weather" class="weather">
+        <div class="error"></div>
+        <div class="circle">
+        <div id="startweather" class="startweather">
+        <div id="location" class="location"></div>
+        <div id="show-weather" class="show-weather"><span></span></div>
+        <div class="weather-icons" style="font-weight: bold;color: #397cf4;">°C</div>
+        </div>
+    </div>
+    </div>
+</body>
+<style>
+    body{
+        margin: 0px;
+    }
+    .logo{
+        text-align: center;
+        position:absolute;
+        width: 100%;
+        margin-top: -50px;
+    }
+    .searchbar{
+        text-align: center;
+        position:absolute;
+        width: 100%;
+        /* margin-top: 220px; */
+    }
+    .searchfunction{
+        box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+        margin: auto;
+        /* width: 90%; */
+        display: flex;
+        height: 44px;
+        border-radius: 5px;
+        border-bottom-style: solid;
+        border-bottom-color: rgb(52, 126, 255);
+        border-bottom-width: 2px;
+        padding: 0 0 0 5px;
+    }
+    input{
+        border:none;
+        outline: 0;
+        width: 100%;
+        margin-left: 5px;
+        
+    }
+    button{
+        width: 50px;
+        background: transparent;
+        border:none;
+        outline: 0;
+        margin-top: 2px;
+        cursor: pointer;
+    }
+    form{
+        display: flex;
+        width: 100%;
+    }
+    .cp{
+        position: absolute;
+        width: 100%;
+        /* margin-top: 300px; */
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color:cornflowerblue;
+    }
+    .dv{
+        position: absolute;
+        width: 100%;
+        /* margin-top: 300px; */
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color:cornflowerblue;
+    }
+    #weather{
+    position: absolute;
+    width: 100%;
+    text-align: end;
+    /* margin-top: 10px; */
+    }
+    .circle{
+        font-size: 17px;
+    }
+    #startweather{
+        display: inline-flex;
+        margin: auto;
+    }
+    #startweather div{
+        margin: 0px 4px 0px 4px;;
+    }
+    #location{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: deepskyblue;
+        font-weight: 800;
+        letter-spacing: 1px;
+        margin-top: 0px;
+    }
+    #show-weather{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 800;
+        color: #fe4dba;
+    }
+    .weather-icons{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+</style>
+<script>
+        //check if the browser supports geo
+        $(document).ready(function(){
+        if("geolocation" in navigator){
+            navigator.geolocation.getCurrentPosition(function(position) {
+            showWeather(position.coords.latitude, position.coords.longitude);
+            });
+            //console.log('geo is available');
+        } else{
+            $('.error').html('<p>Geolocation is not available in your browser</p>');
+            //console.log('geo is not available');
+        }
+        });
+
+        $('#show-weather span').html('<div class="uil-ripple-css" style="transform:scale(0.26);"><div></div><div></div></div>');
+
+        function showWeather(latitude, longitude){
+        var urlWeather = "https://api.openweathermap.org/data/2.5/weather?";
+        var lat = "lat=" + latitude;
+        var lon = "&lon=" + longitude;
+        var APIKEY = "&APPID=" + "f4b463ce4558c625c7004c6d7fa86b1a";
+        var unitsCelcius = "&units=metric";
+        var fetchUrl = urlWeather + lat + lon + unitsCelcius + APIKEY;
+        $.ajax({
+        url: fetchUrl,
+        success:function(data){
+            var temperature = data.main.temp;
+            var weatherIcons = data.weather[0].main;
+            
+                $('#show-weather span').text(Math.round(temperature));     
+                $('#location').text(data.name);
+            $('#myonoffswitch').on('click', function(){
+                if( $('#myonoffswitch').is(':checked') ){
+                    temperature = temperature * 9/5 + 32;
+                    $('#show-weather span').text(Math.round(temperature));
+                    console.log(temperature);
+                }else{
+                    temperature = data.main.temp;
+                    $('#show-weather span').text(temperature);
+                }
+            });
+        }
+        });
+        }
+</script>
+</html>

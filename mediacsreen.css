@@ -1,0 +1,73 @@
+    @media (min-width: 200px){
+        .banner{
+            background-image: url("./banner.webp");
+        }
+    }
+    @media (min-width: 250px){
+        
+    }
+    @media (min-width: 340px){
+        #flx img{
+            width: 180px;
+            height: 180px;
+            margin-right: 10px;
+        }
+        #flx .imgnote{
+            width: 140px;
+            height: 135px;
+        }
+        #flx #imgwiki{
+            width: 140px;
+            height: 135px;
+        }
+    }
+    @media (min-width: 370px){
+        #flx img{
+            width: 180px;
+            height: 180px;
+
+        }
+        #flx p{
+            width: 40%;
+        }
+        #flx .imgnote{
+            width: 140px;
+            height: 135px;
+        }
+    }
+    @media (min-width: 400px){
+        #flx .imgnote{
+            width: 180px;
+            height: 170px;
+        }
+        #flx #imgwiki{
+            width: 180px;
+            height: 180px;
+        }
+    }
+    @media (min-width: 486px){
+        
+    }
+    @media (min-width: 500px){
+         #flx img{
+             margin-right: 30px;
+         }
+    }
+    @media (min-width: 610px){
+        .banner{
+            background-image: url("./banner1.webp");
+        }
+    }
+    @media (min-width: 682px){
+        
+        
+    }
+    @media (min-width: 800px){
+        
+    }
+    @media (min-width: 900px){
+        
+    }
+    @media (min-width: 1000px){
+       
+    }

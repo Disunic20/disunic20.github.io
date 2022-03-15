@@ -34,7 +34,7 @@
         text-decoration: underline;
     }
     .banner{
-        background-image: url("./banner.webp");
+       /* background-image: url("./banner.webp");*/
         height: 800px;
         background-blend-mode: multiply;
         background-color: rebeccapurple;

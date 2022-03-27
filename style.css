@@ -369,6 +369,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 30px;
+        margin-top: 10px;
     }
     .toggle-switch .switch{
         /* text-align: center; */

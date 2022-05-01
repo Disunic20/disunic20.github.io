@@ -65,9 +65,9 @@
             <p>Disunic</p>
         </div>
         <div class="Text2">
-            <p>The Most Advance Cyber Security Website</p>
+            <p>I Am End Of Services 😢 @Nilu</p>
         </div>
-        <div class="Download"><a href=""><button class="d-btn" title="Download Tools">Download</button></a></div>
+        <div class="Download"><a href=""><button class="d-btn" title="Download Tools">Refresh</button></a></div>
         <div class="show-down">
             <div></div>
         </div>
@@ -82,42 +82,7 @@
 </body>
 <body onload="checkCookie()"></body>
 <head>
-    <script>
-        function setCookie(cname,cvalue,exdays) {
-          const d = new Date();
-          d.setTime(d.getTime() + (exdays*24*60*60*1000));
-          let expires = "expires=" + d.toUTCString();
-          document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-        }
-        
-        function getCookie(cname) {
-          let name = cname + "=";
-          let decodedCookie = decodeURIComponent(document.cookie);
-          let ca = decodedCookie.split(';');
-          for(let i = 0; i < ca.length; i++) {
-            let c = ca[i];
-            while (c.charAt(0) == ' ') {
-              c = c.substring(1);
-            }
-            if (c.indexOf(name) == 0) {
-              return c.substring(name.length, c.length);
-            }
-          }
-          return "";
-        }
-        
-        function checkCookie() {
-          let user = getCookie("username");
-          if (user != "") {
-            alert("Welcome Back " + user);
-          } else {
-             user = prompt("Please Enter Your Name:","");
-             if (user != "" && user != null) {
-               setCookie("username", user, 30);
-             }
-          }
-        }
-        </script>
+    
 </head>
 </html>
 <script>

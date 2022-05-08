@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Dark Site Of Disunic</title>
+    <link rel="stylesheet" href="dork.css">
+    <link rel="stylesheet" href="./mediacsreen.css">
+    <script>
+        //DisunicLogic
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                document.getElementById("navbar").style.background = "rgb(20 38 124)";
+            } else {
+                document.getElementById("navbar").style.background = "transparent";
+            }
+        }
+    </script>
+    <script>
+        function disuniclink(){
+            
+        }
+        function devlink(){
+
+        }
+        function settingsopen(){
+            document.getElementById("promt").style.display=""
+            document.getElementById("stbtnop").style.display="none"
+            document.getElementById("stbtncl").style.display=""
+            // stbtnop
+            // stbtncl
+        }
+        function settingsclose(){
+            document.getElementById("promt").style.display="none"
+            document.getElementById("stbtnop").style.display=""
+            document.getElementById("stbtncl").style.display="none"
+        }
+        function git(){
+
+        }
+        function donate(){
+
+        }
+        function insta(){
+
+        }
+        function clmass(){
+            document.getElementById("mass").style.display="none"
+            document.getElementById("favlo").style.marginTop="110px"
+            document.getElementById("promt").style.marginTop="80px"
+
+        }
+    </script>
+</head>
+<body>
+    <nav id="navbar">
+        <img src="./favicon.ico" id="navfav" alt="" style="width: 60px;height: 60px;">
+        <div style="width: 100%; text-align: end;">
+            <button onclick="disuniclink()">Disunic</button>
+            <button onclick="devlink()">Developer</button>
+            <button onclick="settingsopen()" style="margin-right: 17px;" id="stbtnop">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-layout-sidebar-inset" viewBox="0 0 16 16">
+                    <path d="M14 2a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h12zM2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"/>
+                    <path d="M3 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4z"/>
+                  </svg>
+        </button>
+            <button onclick="settingsclose()" style="margin-right: 17px;display: none;" id="stbtncl">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
+                    <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/>
+                  </svg>
+        </button>
+        </div>
+    </nav>
+    <div class="mass" id="mass">
+        <div class="masss" id="mus">
+            <p style="text-align: center ;font-size: 14px;">Our New Python CLI Out Now <a id="tr" href="./disunicx.html">DisunicX Version - 1.0.10</a><button onclick="clmass()" style="margin-left: 10px;">Close</button></p>
+        </div>
+    </div>
+    <header class="banner" style="background-image: url(./dork-banner.jpg);">
+        <div style="position: fixed;width: 100%;margin-top: 170px;text-align: end;justify-content: end;display: none;transition: 1s;" id="promt">
+            <div class="promt" id="promt">
+                <p onclick="git()">GitHub</p>
+                <p onclick="donate()">Donate Us</p>
+                <p onclick="insta()">Instagram</p>
+            </div>
+        </div>
+        <div class="logo">
+            <a href=""><img id="favlo" src="./favicon.png" alt="Logo" title="Disunic.com"></a>
+        </div>
+        <div class="Text1">
+            <p>Disunic Dork</p>
+        </div>
+        <div class="Text2">
+            <p>The Most Advanced Linux Penetration Website</p>
+        </div>
+        <div class="Download"><a href=""><button class="d-btn" title="Download Tools">Download</button></a></div>
+        <div class="show-down">
+            <div></div>
+        </div>
+        </div>
+    </header>
+</body>
+</html>

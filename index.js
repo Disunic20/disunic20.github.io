@@ -5,7 +5,7 @@ themeSwitcher.checked = false;
 function clickHandler(){
     if (this.checked){
         document.body.classList.remove("light");
-        document.body.classList.add("dark");
+        document.body.classList.add("dark");0
         localStorage.setItem("theme", "dark")
     } else{
         document.body.classList.add("light");
@@ -14,7 +14,6 @@ function clickHandler(){
     }
 }
 themeSwitcher.addEventListener("click", clickHandler)
-
 
 window.onload = checkTheme();
 

@@ -1,13 +1,16 @@
-    ::-webkit-scrollbar{
+     ::-webkit-scrollbar {
         display: none;
     }
-    html{
+    
+    html {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
-    body{
+    
+    body {
         margin: 0px;
     }
-    header{
+    
+    header {
         background: #f2f6fa;
         padding: 20px 0 20px 0;
         color: #1c1e21;
@@ -17,25 +20,30 @@
         width: 100%;
         display: flex;
     }
-    h2{
+    
+    h2 {
         font-size: 3rem;
         margin-top: 100px;
         color: #444950;
         text-align: center;
     }
-    p{
+    
+    p {
         max-width: 350px;
         text-align: center;
         margin: 0 auto 2rem;
         font-size: 1.5rem;
     }
-    .main{
+    
+    .main {
         margin-top: 215px;
     }
-    .download{
+    
+    .download {
         text-align: center;
     }
-    .download button{
+    
+    .download button {
         padding: 10px;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-weight: 700;
@@ -48,13 +56,15 @@
         cursor: pointer;
         outline: 0;
     }
-    .down{
+    
+    .down {
         margin-top: 10px;
         display: grid;
         animation: fadein 300ms;
         justify-content: center;
     }
-    .down button{
+    
+    .down button {
         padding: 10px;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-weight: 700;
@@ -70,20 +80,23 @@
         margin: auto;
         margin-top: 20px;
     }
-    @keyframes fadein{
-        0%{
+    
+    @keyframes fadein {
+        0% {
             opacity: 0;
         }
-        100%{
-            opacity: 100;  
+        100% {
+            opacity: 100;
         }
     }
-    .fetures{
+    
+    .fetures {
         background: #f2f6fa;
         padding: 20px 0px 0px 0px;
         margin-top: 40px;
     }
-    .fetures p{
+    
+    .fetures p {
         /* color: #3bc5f7; */
         text-align: left;
         font-weight: 700;
@@ -91,12 +104,14 @@
         font-size: 18px;
         /* margin-top: 30px; */
     }
-    .fetures h3{
+    
+    .fetures h3 {
         font-size: 1.9rem;
         word-spacing: -0.25rem;
         margin-top: 20px;
     }
-    .f{
+    
+    .f {
         width: 90%;
         margin: auto;
         padding: 25px 0px 25px 0px;
@@ -104,47 +119,48 @@
         border-radius: 15px;
         margin-top: 15px;
     }
-    .f p{
+    
+    .f p {
         margin-left: 10px;
         margin-left: 15px;
         margin-right: 15px;
     }
-    .f .ftitle{
-        color: #3bc5f7;
+    
+    .f .ftitle {
+        color: #0580ff;
         font-size: 22px;
     }
-    .f .fdesc{
+    
+    .f .fdesc {
         color: #1c1e21;
         margin-top: 18px;
         max-width: unset;
     }
-    .nav{
+    
+    .nav {
         margin-top: 30px;
         padding: 0px 0px 25px 0px;
     }
-    .nav a{
+    
+    .nav a {
         text-decoration: none;
         color: rgb(45, 116, 247);
     }
-    .nav p{
+    
+    .nav p {
         font-size: 15px;
         text-align: center;
         margin: auto;
     }
-    .img{
+    
+    .img {
         margin: auto;
         text-align: center;
         margin-top: 25px;
         margin-bottom: 25px;
     }
-    .img .pc{
+    
+    .img .pc {
         text-align: center;
         margin: auto;
-        margin-top: 60px;
-        
-    }
-    .pc img{
-        border: 2px solid #2f75f3;
-        border-radius: 10px;
-        padding: 6px 1px 2px 1px;
     }

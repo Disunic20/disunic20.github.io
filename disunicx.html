@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DisunicX Browser - Download Now</title>
     <link rel="stylesheet" href="./styleproduct.css">
+    <link rel="stylesheet" href="./styleppc.css">
 </head>
+
 <body>
     <header>
         <b style="width: 100%;margin-left: 10px;">DisunicX</b>
@@ -14,12 +17,7 @@
         <b></b>
     </header>
     <div class="main">
-        <h2><svg
-            width="285px"
-            height="70px"
-            viewBox="-4 0 373.73799897500146 80.8643559754174"
-            class="css-1j8o68f"
-          >
+        <h2><svg width="285px" height="70px" viewBox="-4 0 373.73799897500146 80.8643559754174" class="css-1j8o68f">
             <defs id="SvgjsDefs2854">
               <linearGradient id="SvgjsLinearGradient2859">
                 <stop id="SvgjsStop2860" stop-color="#00ddff" offset="0"></stop>
@@ -68,9 +66,10 @@
             <button onclick="lin()">Download Source Code For Linux</button>
         </div>
         <div class="img">
-            <div class="pc">
+            <div class="pcs">
                 <img class="pc" src="./imgs/pc.png" alt="">
             </div>
+            <div class="bar"></div>
         </div>
         <div class="fetures">
             <p style="color: #3bc5f7; text-align: center;margin: auto;"># FEATURES</p>
@@ -79,7 +78,7 @@
                 <p class="fdesc">What you do inside your browser is your business, we don't see any of it.</p>
             </div>
             <div class="f">
-                <p class="ftitle">Icognito Windows</p>
+                <p class="ftitle">Incognito Windows</p>
                 <p class="fdesc">In the Icognito we not store any data and history.</p>
             </div>
             <div class="f">
@@ -96,78 +95,95 @@
         </div>
     </div>
 </body>
+
 </html>
 
 <script>
-    function download(){
-        document.getElementById('down').style.display="";
-        document.getElementById('db').style.display="none";
+    function download() {
+        document.getElementById('down').style.display = "";
+        document.getElementById('db').style.display = "none";
         // document.getElementById('cb').style.display="";
     }
-    function an(){
+
+    function an() {
         window.open("https://github.com/DisunicX/DisunicX.github.io/releases/download/DisunicX/DisunicX.apk")
     }
-    function pc(){
+
+    function pc() {
         window.open("https://github.com/DisunicCorporation/DisunicX-Browser/releases/download/DisunicX/DisunicX.exe")
     }
-    function lin(){
+
+    function lin() {
         window.open("https://github.com/DisunicCorporation/DisunicX-Browser")
     }
 </script>
 <style>
-    @media (min-width: 340px){
-        .img .pc{
+    @media (min-width: 340px) {
+        .img .pc {
             width: 300px;
         }
     }
-    @media (min-width: 360px){
-        .img .pc{
+    
+    @media (min-width: 360px) {
+        .img .pc {
             width: 310px;
         }
     }
-    @media (min-width: 400px){
-        .img .pc{
-            width: 350px;
+    
+    @media (min-width: 400px) {
+        .img .pc {
+            width: 340px;
         }
     }
-    @media (min-width: 450px){
-        .img .pc{
+    
+    @media (min-width: 450px) {
+        .img .pc {
             width: 400px;
         }
     }
-    @media (min-width: 500px){
-        .img .pc{
+    
+    @media (min-width: 500px) {
+        .img .pc {
             width: 450px;
         }
     }
-    @media (min-width: 550px){
-        .img .pc{
+    
+    @media (min-width: 550px) {
+        .img .pc {
             width: 500px;
         }
     }
-    @media (min-width: 600px){
-        .img .pc{
+    
+    @media (min-width: 600px) {
+        .img .pc {
             width: 550px;
         }
     }
-    @media (min-width: 650px){
-        .img .pc{
-            width: 600px;
+    
+    @media (min-width: 650px) {
+        .img .pc {
+            width: 420px;
         }
     }
-    @media (min-width: 700px){
-        .img .pc{
+    
+    @media (min-width: 700px) {
+        .img .pc {
             width: 650px;
         }
     }
-    @media (min-width: 800px){
-        .img .pc{
-            width: 750px;
+    
+    @media (min-width: 800px) {
+        .img .pc {
+            width: 700px;
         }
     }
-    @media (min-width: 1000px){
-        .img .pc{
+    
+    @media (min-width: 1000px) {
+        .img .pc {
             width: 950px;
+        }
+        .img .bar {
+            width: 85%;
         }
     }
 </style>

@@ -46,6 +46,10 @@
             window.open("./disunic-error.html")
         }
 
+        function india() {
+            window.open("https://en.wikipedia.org/wiki/India")
+        }
+
         function git() {
             window.open("https://github.com/DisunicCorporation")
         }
@@ -88,9 +92,13 @@
 
         function scrollFunction() {
             if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                document.getElementById("navbar").style.background = "#323a60";
+                // document.getElementById("navbar").style.background = "#323a60";
+                document.getElementById("navbar").style.background = "linear-gradient(45deg, #761f34, #3f5bbf)";
+                document.getElementById("navbar").style.transition = "backgroud 1s"
+                // background: linear-gradient(45deg, #761f34, #3f5bbf);
             } else {
                 document.getElementById("navbar").style.background = "transparent";
+                document.getElementById("navbar").style.transition = "backgroud 1s"
             }
         }
     </script>
@@ -200,7 +208,15 @@
         <!-- Navigation -->
         <div id="nav" class="nav">
             <p><a>Disunic Corporation</a> - 2022 All Rights Reserved</p>
-            <!-- <p>Country India</p> -->
+            <p style="margin-top:-25px">UI Version - 4.90</p>
+            <p onclick="india()" style="width: fit-content;
+            padding: 15px;
+            margin: auto;
+            margin-top: -5px;
+            margin-bottom: 20px;
+            background: linear-gradient(180deg, #ff9022, white,green);
+            color: rgb(0, 89, 255);
+            border-radius: 8px;">From INDIA ❤</p>
         </div>
         <script src="./index.js"></script>
 </body>

@@ -1,0 +1,36 @@
+@media (min-width: 340px) {
+    .down{
+        width: 90%;
+    }
+}
+
+
+@media (min-width: 400px) {
+    .down{
+        width: 84%;
+    }
+}
+
+@media (min-width: 500px) {
+    .down {
+        width: 80%;
+    }
+}
+
+@media (min-width: 550px) {
+    .down {
+        width: 78%;
+    }
+}
+
+@media (min-width: 600px) {
+    .down {
+            width: 70%;
+        }
+}
+
+@media (min-width: 1000px) {
+    .down {
+        width: 50%;
+    }
+}

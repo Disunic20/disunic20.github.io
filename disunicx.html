@@ -13,7 +13,7 @@
 <body>
     <header>
         <b style="width: 100%;margin-left: 10px;">DisunicX</b>
-        <b style="width: 100%;text-align: end;margin-right: 10px;">Latest Version - 1.0.10</b>
+        <b style="width: 100%;text-align: end;margin-right: 10px;">Stable Version</b>
         <b></b>
     </header>
     <div class="main">
@@ -57,13 +57,19 @@
           </svg>
         </h2>
         <p>Striking the perfect balance between privacy and usability.</p>
-        <div class="download">
-            <button onclick="download()" id="db">Download</button>
-        </div>
-        <div class="down" id="down" style="display: none;">
-            <button onclick="an()">Download For Android</button></a>
-            <button onclick="pc()">Download For Windows 7,10,11</button>
-            <button onclick="lin()">Download Source Code For Linux</button>
+        <div class="down" id="down">
+            <div class="android" id="dsp">
+                <p>Android</p>
+                <button onclick="an()">Download</button></a>
+            </div>
+            <div class="windows" id="dsp">
+                <p>Windows</p>
+                <button onclick="pc()">Download</button></a>
+            </div>
+            <div class="linux" id="dsp">
+                <p>Linux</p>
+                <button onclick="lin()">Download</button></a>
+            </div>
         </div>
         <div class="img">
             <div class="pcs">
@@ -99,14 +105,9 @@
 </html>
 
 <script>
-    function download() {
-        document.getElementById('down').style.display = "";
-        document.getElementById('db').style.display = "none";
-        // document.getElementById('cb').style.display="";
-    }
 
     function an() {
-        window.open("https://github.com/DisunicX/DisunicX.github.io/releases/download/DisunicX/DisunicX.apk")
+        window.open("https://github.com/DisunicCorporation/DisunicX-Browser/releases/download/DisunicX_For_Android/DisunicX.apk")
     }
 
     function pc() {
@@ -122,6 +123,9 @@
         .img .pc {
             width: 300px;
         }
+        .down{
+            width: 90%;
+        }
     }
     
     @media (min-width: 360px) {
@@ -133,6 +137,9 @@
     @media (min-width: 400px) {
         .img .pc {
             width: 340px;
+        }
+        .down{
+            width: 84%;
         }
     }
     
@@ -146,11 +153,17 @@
         .img .pc {
             width: 450px;
         }
+        .down {
+            width: 80%;
+        }
     }
     
     @media (min-width: 550px) {
         .img .pc {
             width: 500px;
+        }
+        .down {
+            width: 78%;
         }
     }
     
@@ -158,6 +171,9 @@
         .img .pc {
             width: 550px;
         }
+        .down {
+                width: 70%;
+            }
     }
     
     @media (min-width: 650px) {
@@ -184,6 +200,9 @@
         }
         .img .bar {
             width: 85%;
+        }
+        .down {
+            width: 50%;
         }
     }
 </style>

@@ -1,0 +1,16 @@
+{
+    "status": "Ok",
+    "totalresult":"1",
+    "api": [
+      {
+        "source": {
+          "id": "Disunic",
+          "name": "Disunic"
+        },
+        "url": "https://disunic20.github.io",
+        "year":"2022",
+        "Author": "Souvik Nandi",
+        "api-v":"2.5.00.5"
+      }
+    ]
+  }

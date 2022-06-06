@@ -27,7 +27,7 @@ p{
 }
 ::-webkit-scrollbar-thumb{
     border-radius: 10px;
-    background-color: #00bcd4;
+    background: linear-gradient(198deg, #ffeb3b, #ff22a7);
 }
 @keyframes wr {
     0%{
@@ -147,6 +147,10 @@ p{
     border-radius: 5px;
     color: black;
     margin-top: 20px;
+    transition: 200ms;
+}
+.btns a:hover{
+    box-shadow: 0px 1px 3px 0px rgb(182, 179, 179);
 }
 .about{
     text-align: center;
@@ -179,4 +183,13 @@ p{
 #ol a{
     color:#03a9f4;
     text-decoration: underline;
+}
+.notp{
+    text-align: center;
+    font-size: 26px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 0px rgb(205, 205, 205);
+    width: fit-content;
+    margin: auto;
+    border-radius: 10px;
 }

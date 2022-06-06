@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disunic App</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body onload="New(),checkCookie()">
+    <header>
+      <p onclick="New()" id="b1" class="headbuttons">New</p>
+      <p onclick="trend()" id="b2" class="headbuttons">Trending</p>
+      <p onclick="project()" id="b3" class="headbuttons">Projects</p>
+      <p onclick="main()" id="b4" class="headbuttons">Disunic</p>
+      <p onclick="about()" id="b5" class="headbuttons">About</p>
+      <p onclick="ref()" id="b6" class="headbuttons">Refresh</p>
+    </header>
+    <div class="mains" style="margin-top: 120px">
+      <section id="new" class="new">
+        <div class="card">
+          <h2 class="Hn">Calculator</h2>
+          <p class="ab">A Simple Scientific Calculator .</p>
+          <p class="lang">Html , Css, Javascript</p>
+          <div class="btns">
+            <a
+              href="https://disuniccorporation.github.io/Simple-Scientific-Calculator/"
+              >Deployment</a
+            >
+            <a href="">Download</a>
+            <a
+              href="https://github.com/DisunicCorporation/Simple-Scientific-Calculator"
+              >GitHub</a
+            >
+            <a href="https://codepen.io/disunic20/pen/BaYPmNw">Codepen</a>
+          </div>
+        </div>
+        <div class="card">
+          <h2 class="Hn">Calculator</h2>
+          <p class="ab">A Simple Scientific Calculator .</p>
+          <p class="lang">Html , Css, Javascript</p>
+          <div class="btns">
+            <a href="">Deployment</a>
+            <a href="">Download</a>
+            <a href="">GitHub</a>
+            <a href="">Codepen</a>
+          </div>
+        </div>
+        <div class="card">
+          <h2 class="Hn">Calculator</h2>
+          <p class="ab">A Simple Scientific Calculator .</p>
+          <p class="lang">Html , Css, Javascript</p>
+          <div class="btns">
+            <a href="">Deployment</a>
+            <a href="">Download</a>
+            <a href="">GitHub</a>
+            <a href="">Codepen</a>
+          </div>
+        </div>
+      </section>
+      <section id="trend" class="trend">
+        <div class="card">
+          <h2 class="Hn">Calculator</h2>
+          <p class="ab">A Simple Scientific Calculator .</p>
+          <p class="lang">Html , Css, Javascript</p>
+          <div class="btns">
+            <a
+              href="https://disuniccorporation.github.io/Simple-Scientific-Calculator/"
+              >Deployment</a
+            >
+            <a href="">Download</a>
+            <a
+              href="https://github.com/DisunicCorporation/Simple-Scientific-Calculator"
+              >GitHub</a
+            >
+            <a href="https://codepen.io/disunic20/pen/BaYPmNw">Codepen</a>
+          </div>
+        </div>
+      </section>
+      <section id="project" class="project">
+        <div class="card">
+          <h2 class="Hn">Calculator</h2>
+          <p class="ab">A Simple Scientific Calculator .</p>
+          <p class="lang">Html , Css, Javascript</p>
+          <div class="btns">
+            <a
+              href="https://disuniccorporation.github.io/Simple-Scientific-Calculator/"
+              >Deployment</a
+            >
+            <a href="">Download</a>
+            <a
+              href="https://github.com/DisunicCorporation/Simple-Scientific-Calculator"
+              >GitHub</a
+            >
+            <a href="https://codepen.io/disunic20/pen/BaYPmNw">Codepen</a>
+          </div>
+        </div>
+      </section>
+      <section id="main" class="disunic">
+        <iframe
+          src="https://disunic20.github.io"
+          frameborder="0"
+          style="margin-top: -35px; width: 100%; height: 768px"
+        ></iframe>
+      </section>
+      <section id="about" class="about">
+        <div>
+          <img src="./source/favicon.png" alt="" />
+          <p style="margin-top: 20px; margin-bottom: 15px; font-weight: 600">
+            Official Disunic Application
+          </p>
+          <p style="margin-top: 20px; margin-bottom: 15px; font-weight: 600">
+            Api Version - 5.0.2
+          </p>
+          <div id="ol"></div>
+          <div id="abbt"></div>
+          <script src="./src/javascript/scrippt.js"></script>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
+
+<script>
+  function New() {
+    document.getElementById("trend").style.display = "none";
+    document.getElementById("project").style.display = "none";
+    document.getElementById("main").style.display = "none";
+    document.getElementById("about").style.display = "none";
+    document.getElementById("new").style.display = "";
+    document.getElementById("b1").style.borderBottomWidth = "8px ";
+    document.getElementById("b2").style.borderBottomWidth = "2px ";
+    document.getElementById("b3").style.borderBottomWidth = "2px ";
+    document.getElementById("b4").style.borderBottomWidth = "2px ";
+    document.getElementById("b5").style.borderBottomWidth = "2px ";
+    document.body.style.backgroundColor = "white";
+  }
+  function trend() {
+    document.getElementById("new").style.display = "none";
+    document.getElementById("project").style.display = "none";
+    document.getElementById("main").style.display = "none";
+    document.getElementById("about").style.display = "none";
+    document.getElementById("trend").style.display = "";
+    document.getElementById("b1").style.borderBottomWidth = "2px ";
+    document.getElementById("b2").style.borderBottomWidth = "8px ";
+    document.getElementById("b3").style.borderBottomWidth = "2px ";
+    document.getElementById("b4").style.borderBottomWidth = "2px ";
+    document.getElementById("b5").style.borderBottomWidth = "2px ";
+    document.body.style.backgroundColor = "white";
+  }
+  function project() {
+    document.getElementById("trend").style.display = "none";
+    document.getElementById("new").style.display = "none";
+    document.getElementById("main").style.display = "none";
+    document.getElementById("about").style.display = "none";
+    document.getElementById("project").style.display = "";
+    document.getElementById("b1").style.borderBottomWidth = "2px ";
+    document.getElementById("b2").style.borderBottomWidth = "2px ";
+    document.getElementById("b3").style.borderBottomWidth = "8px ";
+    document.getElementById("b4").style.borderBottomWidth = "2px ";
+    document.getElementById("b5").style.borderBottomWidth = "2px ";
+    document.body.style.backgroundColor = "white";
+  }
+  function main() {
+    document.getElementById("trend").style.display = "none";
+    document.getElementById("project").style.display = "none";
+    document.getElementById("new").style.display = "none";
+    document.getElementById("main").style.display = "";
+    document.getElementById("about").style.display = "none";
+    document.getElementById("b1").style.borderBottomWidth = "2px";
+    document.getElementById("b2").style.borderBottomWidth = "2px ";
+    document.getElementById("b3").style.borderBottomWidth = "2px ";
+    document.getElementById("b4").style.borderBottomWidth = "8px ";
+    document.getElementById("b5").style.borderBottomWidth = "2px ";
+    document.body.style.backgroundColor = "white";
+  }
+  function about() {
+    document.getElementById("trend").style.display = "none";
+    document.getElementById("project").style.display = "none";
+    document.getElementById("new").style.display = "none";
+    document.getElementById("main").style.display = "none";
+    document.getElementById("about").style.display = "";
+    document.getElementById("b1").style.borderBottomWidth = "2px";
+    document.getElementById("b2").style.borderBottomWidth = "2px ";
+    document.getElementById("b3").style.borderBottomWidth = "2px ";
+    document.getElementById("b4").style.borderBottomWidth = "2px ";
+    document.getElementById("b5").style.borderBottomWidth = "8px ";
+    document.body.style.backgroundColor = "#f2f6fa";
+  }
+  function ref() {
+    window.location.reload();
+  }
+</script>
+<script>
+  // let ip = document.getElementById("ol");
+  // function setCookie(cname, cvalue, exdays) {
+  //   const d = new Date();
+  //   d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+  //   let expires = "expires=" + d.toUTCString();
+  //   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  // }
+
+  // function getCookie(cname) {
+  //   let name = cname + "=";
+  //   let decodedCookie = decodeURIComponent(document.cookie);
+  //   let ca = decodedCookie.split(";");
+  //   for (let i = 0; i < ca.length; i++) {
+  //     let c = ca[i];
+  //     while (c.charAt(0) == " ") {
+  //       c = c.substring(1);
+  //     }
+  //     if (c.indexOf(name) == 0) {
+  //       return c.substring(name.length, c.length);
+  //     }
+  //   }
+  //   return "";
+  // }
+
+  // function checkCookie() {
+  //   let user = getCookie("username");
+  //   if (user != "") {
+  //     ip.innerHTML =
+  //       "<p>Thank you " + "<a>" + user + "</a>" + " For Using Us</p>";
+  //   } else {
+  //     user = prompt("Please Enter Your Name:", "");
+  //     if (user != "" && user != null) {
+  //       setCookie("username", user, 30);
+  //     }
+  //   }
+  // }
+</script>
+<script>
+  //   if (document.addEventListener) {
+  //     document.addEventListener(
+  //       "contextmenu",
+  //       function (e) {
+  //         alert("This is an Application Programe");
+  //         alert("Disunic Is Disabled The Right Click Function"); //here you draw your own menu
+  //         e.preventDefault();
+  //       },
+  //       false
+  //     );
+  //   } else {
+  //     document.attachEvent("oncontextmenu", function () {
+  //       alert("You've tried to open context menu");
+  //       window.event.returnValue = false;
+  //     });
+  //   }
+  //   document.addEventListener("contextmenu", (event) => event.preventDefault());
+</script>

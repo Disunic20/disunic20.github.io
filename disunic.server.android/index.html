@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Disunic App</title>
+    <title>Disunic Projects - Disunic</title>
     <link rel="stylesheet" href="./src/css/style.css" />
   </head>
   <body onload="New(),checkCookie()">
@@ -17,25 +17,22 @@
       </p>
       <p onclick="about()" id="b5" class="headbuttons">About</p>
       <p onclick="ref()" id="b6" class="headbuttons">Refresh</p>
-      <p onclick="main()" id="b4" class="headbuttons">
-        <a style="color: white; text-decoration: none"href="https://d699-2409-4061-4e04-d32-8c48-d2f9-ee2-f49e.ngrok.io">Testing</a>
-      </p>
     </header>
     <div class="mains" style="margin-top: 120px">
       <section id="new" class="new">
-        <div class="card">
-          <h2 class="Hn">Calculator</h2>
-          <p class="ab">A Simple Scientific Calculator .</p>
+        <div class="card" id="pro3">
+          <h2 class="Hn">Find Your Recipe</h2>
+          <p class="ab">A Simple Recipe Search Engine .</p>
           <p class="lang">Html , Css, Javascript</p>
           <div class="btns">
-            <a href="https://disuniccorporation.github.io/Simple-Scientific-Calculator/">Deployment</a>
-            <a href="https://github.com/DisunicCorporation/Simple-Scientific-Calculator">GitHub</a>
-            <a href="https://codepen.io/disunic20/pen/BaYPmNw">Codepen</a>
-            <a href="">Download_App</a>
-            <a href="https://github.com/DisunicCorporation/Simple-Scientific-Calculator/archive/refs/heads/main.zip">Download_Source_Code</a>
+            <a href="https://disuniccorporation.github.io/Find-Your-Recipe/">Deployment</a>
+            <a href="https://github.com/DisunicCorporation/Find-Your-Recipe">GitHub</a>
+            <a href="https://codepen.io/disunic20/pen/poaxaVR">Codepen</a>
+            <!-- <a href="">Download_App</a> -->
+            <a href="https://github.com/DisunicCorporation/Find-Your-Recipe/archive/refs/heads/main.zip">Download_Source_Code</a>
           </div>
         </div>
-        <div class="card">
+        <div class="card" id="pro2">
           <h2 class="Hn">Google Search</h2>
           <p class="ab">Google Homepage .</p>
           <p class="lang">Html , Css</p>
@@ -45,6 +42,18 @@
             <a href="https://codepen.io/disunic20/pen/dydqbBy">Codepen</a>
             <!-- <a href="">Download-App</a> -->
             <a href="https://github.com/DisunicCorporation/Google-Search-Homepage/archive/refs/heads/main.zip">Download_Source_Code</a>
+          </div>
+        </div>
+        <div class="card" id="pro1">
+          <h2 class="Hn">Calculator</h2>
+          <p class="ab">A Simple Scientific Calculator .</p>
+          <p class="lang">Html , Css, Javascript</p>
+          <div class="btns">
+            <a href="https://disuniccorporation.github.io/Simple-Scientific-Calculator/">Deployment</a>
+            <a href="https://github.com/DisunicCorporation/Simple-Scientific-Calculator">GitHub</a>
+            <a href="https://codepen.io/disunic20/pen/BaYPmNw">Codepen</a>
+            <a href="">Download_App</a>
+            <a href="https://github.com/DisunicCorporation/Simple-Scientific-Calculator/archive/refs/heads/main.zip">Download_Source_Code</a>
           </div>
         </div>
       </section>
@@ -52,7 +61,7 @@
         <p class="notp">Not Available !</p>
       </section>
       <section id="project" class="project">
-        <div class="card">
+        <div class="card" id="pro1">
           <h2 class="Hn">Calculator</h2>
           <p class="ab">A Simple Scientific Calculator .</p>
           <p class="lang">Html , Css, Javascript</p>
@@ -64,7 +73,7 @@
             <a href="https://github.com/DisunicCorporation/Simple-Scientific-Calculator/archive/refs/heads/main.zip">Download_Source_Code</a>
           </div>
         </div>
-        <div class="card">
+        <div class="card" id="pro2">
           <h2 class="Hn">Google Search</h2>
           <p class="ab">Google Homepage .</p>
           <p class="lang">Html , Css</p>
@@ -74,6 +83,18 @@
             <a href="https://codepen.io/disunic20/pen/dydqbBy">Codepen</a>
             <!-- <a href="">Download-App</a> -->
             <a href="https://github.com/DisunicCorporation/Google-Search-Homepage/archive/refs/heads/main.zip">Download_Source_Code</a>
+          </div>
+        </div>
+        <div class="card" id="pro3">
+          <h2 class="Hn">Find Your Recipe</h2>
+          <p class="ab">A Simple Recipe Search Engine .</p>
+          <p class="lang">Html , Css, Javascript</p>
+          <div class="btns">
+            <a href="https://disuniccorporation.github.io/Find-Your-Recipe/">Deployment</a>
+            <a href="https://github.com/DisunicCorporation/Find-Your-Recipe">GitHub</a>
+            <a href="https://codepen.io/disunic20/pen/poaxaVR">Codepen</a>
+            <!-- <a href="">Download_App</a> -->
+            <a href="https://github.com/DisunicCorporation/Find-Your-Recipe/archive/refs/heads/main.zip">Download_Source_Code</a>
           </div>
         </div>
       </section>
@@ -84,17 +105,16 @@
             Official Disunic Application
           </p>
           <p style="margin-top: 20px; margin-bottom: 15px; font-weight: 600">
-            Api Version - 5.0.50
+            Api Version - 5.0.60
           </p>
           <div id="ol"></div>
           <div id="abbt"></div>
           <script src="./src/javascript/scrippt.js"></script>
-        </div>
+        </div> 
       </section>
     </div>
   </body>
 </html>
-
 <script>
   function New() {
     document.getElementById("trend").style.display = "none";
@@ -159,61 +179,4 @@
   function ref() {
     window.location.reload();
   }
-</script>
-<script>
-  // let ip = document.getElementById("ol");
-  // function setCookie(cname, cvalue, exdays) {
-  //   const d = new Date();
-  //   d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
-  //   let expires = "expires=" + d.toUTCString();
-  //   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-  // }
-
-  // function getCookie(cname) {
-  //   let name = cname + "=";
-  //   let decodedCookie = decodeURIComponent(document.cookie);
-  //   let ca = decodedCookie.split(";");
-  //   for (let i = 0; i < ca.length; i++) {
-  //     let c = ca[i];
-  //     while (c.charAt(0) == " ") {
-  //       c = c.substring(1);
-  //     }
-  //     if (c.indexOf(name) == 0) {
-  //       return c.substring(name.length, c.length);
-  //     }
-  //   }
-  //   return "";
-  // }
-
-  // function checkCookie() {
-  //   let user = getCookie("username");
-  //   if (user != "") {
-  //     ip.innerHTML =
-  //       "<p>Thank you " + "<a>" + user + "</a>" + " For Using Us</p>";
-  //   } else {
-  //     user = prompt("Please Enter Your Name:", "");
-  //     if (user != "" && user != null) {
-  //       setCookie("username", user, 30);
-  //     }
-  //   }
-  // }
-</script>
-<script>
-  //   if (document.addEventListener) {
-  //     document.addEventListener(
-  //       "contextmenu",
-  //       function (e) {
-  //         alert("This is an Application Programe");
-  //         alert("Disunic Is Disabled The Right Click Function"); //here you draw your own menu
-  //         e.preventDefault();
-  //       },
-  //       false
-  //     );
-  //   } else {
-  //     document.attachEvent("oncontextmenu", function () {
-  //       alert("You've tried to open context menu");
-  //       window.event.returnValue = false;
-  //     });
-  //   }
-  //   document.addEventListener("contextmenu", (event) => event.preventDefault());
 </script>

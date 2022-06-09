@@ -2,8 +2,13 @@ body{
     margin: 0px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+::selection{
+    background: rgb(26, 118, 247);
+    color: rgb(255, 255, 255);
+}
 header{
-    background: linear-gradient(45deg, #4c64eb, #f822ff);
+    /* background: linear-gradient(45deg, #4c64eb, #f822ff); */
+    background: linear-gradient(30deg,#06b0ff,#d519f5,#ff3b99);
     height: 80px;
     display: flex;
     border-bottom-left-radius: 2px;
@@ -12,6 +17,7 @@ header{
     width: 100%;
     margin-top: -120px;
     overflow-x: scroll;
+    box-shadow: 0px 6px 6px 0 #8e8e8e;
 }
 p{
     display: block;
@@ -38,6 +44,9 @@ p{
         width: 100%;
         opacity: 100;
     }
+}
+.mains{
+    margin-bottom: 30px;
 }
 .headbuttons{
     border: 2px solid;
@@ -193,3 +202,4 @@ p{
     margin: auto;
     border-radius: 10px;
 }
+

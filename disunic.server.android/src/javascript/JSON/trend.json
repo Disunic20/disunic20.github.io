@@ -1,0 +1,21 @@
+{
+    "status": "Ok",
+    "totalresult":"3",
+    "ab":"Disunic Corporation - 2022 All Rights Reserved",
+    "api": [
+      {
+        "source": {
+          "id": "Disunic",
+          "from": "Disunic"
+        },
+        "title":"Calculator",
+        "description":"A Simple Scientific Calculator .",
+        "language":"Html , Css, Javascript",
+        "url1":"https://disuniccorporation.github.io/Simple-Scientific-Calculator/",
+        "url2":"https://github.com/DisunicCorporation/Simple-Scientific-Calculator",
+        "url3":"https://codepen.io/disunic20/pen/BaYPmNw",
+        "url4":"https://github.com/DisunicCorporation/Simple-Scientific-Calculator/archive/refs/heads/main.zip",
+        "SID":"1"
+      }
+    ]
+  }

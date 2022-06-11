@@ -1,18 +1,18 @@
-let newsAccordionnh = document.getElementById("projects");
+let projects = document.getElementById("project");
 
 // Create an ajax get request
 const xhrpro = new XMLHttpRequest();
-xhrpro.open("GET", `https://disunic20.github.io/disunic.server.android/src/javascript/JSON/projects.json`, true);
+xhrpro.open("GET", `https://disunic20.github.io/disunic.server.android/JSON/projects.json`, true);
 
 // What to do when response is ready
 xhrpro.onload = function () {
   if (this.status === 200) {
     let json = JSON.parse(this.responseText);
     let api = json.api;
-    console.log(api)
-    let newareess = "";
+    // console.log(api)
+    let pro1 = "";
     api.forEach(function (element) {
-      let news = `
+      let pro2 = `
             <div class="card">
                 <h2 class="Hn">${element["title"]}</h2>
                 <p class="ab">${element["description"]}</p>
@@ -24,9 +24,9 @@ xhrpro.onload = function () {
                     <a href="${element["url4"]}">Download_Source_Code</a>
                 </div>
             </div>`
-      newareess += news;
+      pro1 += pro2;
     });
-    newsAccordionnh.innerHTML = newareess;
+    projects.innerHTML = pro1;
   } else {
     console.log("_🤔");
   }

@@ -1,15 +1,15 @@
-let newsAccordionm = document.getElementById("projects");
+let newsAccordionnm = document.getElementById("trend");
 
 // Create an ajax get request
 const xhrtrend = new XMLHttpRequest();
-xhrtrend.open("GET", `https://disunic20.github.io/disunic.server.android/src/javascript/JSON/trend.json`, true);
+xhrtrend.open("GET", `https://disunic20.github.io/disunic.server.android/JSON/trend.json`, true);
 
 // What to do when response is ready
 xhrtrend.onload = function () {
   if (this.status === 200) {
     let json = JSON.parse(this.responseText);
     let api = json.api;
-    console.log(api)
+    // console.log(api)
     let newareess = "";
     api.forEach(function (element) {
       let news = `

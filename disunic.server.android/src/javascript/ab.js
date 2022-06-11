@@ -1,4 +1,4 @@
-let newsAccordionee = document.getElementById("abbt");
+let abouts = document.getElementById("abbt");
 
 // Create an ajax get request
 const xhrr = new XMLHttpRequest();
@@ -9,14 +9,14 @@ xhrr.onload = function () {
   if (this.status === 200) {
     let json = JSON.parse(this.responseText);
     let api = json.api;
-    console.log(api)
-    let newaress = "";
+    // console.log(api)
+    let ab = "";
     api.forEach(function (element) {
-      let newss = ` 
+      let abot = ` 
             <p><a href="${element["url"]}">Disunic Corporation</a> - ${element["year"]} All Rights Reserved</p>`;
-      newaress += newss;
+      ab += abot;
     });
-    newsAccordionee.innerHTML = newaress;
+    abouts.innerHTML = ab;
   } else {
     console.log("_🤔");
   }

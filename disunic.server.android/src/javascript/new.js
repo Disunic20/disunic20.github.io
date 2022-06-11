@@ -1,4 +1,4 @@
-let newsAccordionn = document.getElementById("projects");
+let newsAccordionnp = document.getElementById("projects");
 
 // Create an ajax get request
 const xhrnew = new XMLHttpRequest();
@@ -26,7 +26,7 @@ xhrnew.onload = function () {
             </div>`
       newareess += news;
     });
-    newsAccordionn.innerHTML = newareess;
+    newsAccordionnp.innerHTML = newareess;
   } else {
     console.log("_🤔");
   }

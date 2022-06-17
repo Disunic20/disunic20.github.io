@@ -2,7 +2,7 @@ let newsAccordionnm = document.getElementById("trend");
 
 // Create an ajax get request
 const xhrtrend = new XMLHttpRequest();
-xhrtrend.open("GET", `https://disunic20.github.io/disunic.server.android/JSON/trend.json`, true);
+xhrtrend.open("GET", `./JSON/trend.json`, true);
 
 // What to do when response is ready
 xhrtrend.onload = function () {

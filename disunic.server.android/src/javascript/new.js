@@ -2,7 +2,7 @@ let newp = document.getElementById("new");
 
 // Create an ajax get request
 const xhrnew = new XMLHttpRequest();
-xhrnew.open("GET", `https://disunic20.github.io/disunic.server.android/JSON/new.json`, true);
+xhrnew.open("GET", `./JSON/new.json`, true);
 
 // What to do when response is ready
 xhrnew.onload = function () {

@@ -2,7 +2,7 @@ let projects = document.getElementById("project");
 
 // Create an ajax get request
 const xhrpro = new XMLHttpRequest();
-xhrpro.open("GET", `https://disunic20.github.io/disunic.server.android/JSON/projects.json`, true);
+xhrpro.open("GET", `./JSON/projects.json`, true);
 
 // What to do when response is ready
 xhrpro.onload = function () {

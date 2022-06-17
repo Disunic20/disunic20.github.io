@@ -8,36 +8,31 @@
     <link rel="stylesheet" href="./src/css/style.css" />
   </head>
   <body onload="New()">
-    <header id="hd">
+    <header>
       <p onclick="New()" id="b1" class="headbuttons">New</p>
-      <p onclick="project()" id="b2" class="headbuttons">Projects</p>
-      <p onclick="about()" id="b3" class="headbuttons">About</p>
-      <p onclick="ref()" id="b4" class="headbuttons">Refresh</p>
-      <p id="b5" class="headbuttons"><a style="color: white; text-decoration: none"href="https://disunic20.github.io">Disunic</a></p>
+      <p onclick="trend()" id="b2" class="headbuttons">Trending</p>
+      <p onclick="project()" id="b3" class="headbuttons">Projects</p>
+      <p onclick="about()" id="b5" class="headbuttons">About</p>
+      <p onclick="ref()" id="b6" class="headbuttons">Refresh</p>
+      <p id="b4" class="headbuttons"><a style="color: white; text-decoration: none"href="https://disunic20.github.io">Disunic</a></p>
     </header>
     <div class="mains" style="margin-top: 120px" id="main">
         <section id="new" class="new"></section>
+        <section id="trend" class="trend" style="display: none;"><p class="notp">Not Available !</p></section>
         <section id="project" class="project"></section>
         <section id="about" class="about" style="display: none;">
             <div id="abouts"><script src="./src/javascript/about.js"></script></div> 
             <div id="abbt"><script src="./src/javascript/ab.js"></script></div>
-            <div class="upnote">
-              <h2>Updates</h2>
-              <p>1. Server Fixes</p>
-              <p>2. Loading Speed Increase</p>
-              <p>3. Desing Inprovment</p>
-              <p>4. Bug Fixes</p>
-            </div>
-          </section>
+        </section>
     </div>
     <script src="./src/javascript/new.js"></script>
     <script src="./src/javascript/project.js"></script>
-    <!-- <script src="./src/javascript/trend.js"></script> -->
-    <script src="./src/javascript/theme.js"></script>
+    <script src="./src/javascript/trend.js"></script>
   </body>
 </html>
 <script>
   function New() {
+    document.getElementById("trend").style.display = "none";
     document.getElementById("project").style.display = "none";
     document.getElementById("about").style.display = "none";
     document.getElementById("new").style.display = "";
@@ -45,40 +40,46 @@
     document.getElementById("b2").style.borderBottomWidth = "2px ";
     document.getElementById("b3").style.borderBottomWidth = "2px ";
     document.getElementById("b4").style.borderBottomWidth = "2px ";
+    document.getElementById("b5").style.borderBottomWidth = "2px ";
+    document.body.style.backgroundColor = "white";
   }
-  function project() {
+  function trend() {
     document.getElementById("new").style.display = "none";
+    document.getElementById("project").style.display = "none";
     document.getElementById("about").style.display = "none";
-    document.getElementById("project").style.display = "";
+    document.getElementById("trend").style.display = "";
     document.getElementById("b1").style.borderBottomWidth = "2px ";
     document.getElementById("b2").style.borderBottomWidth = "8px ";
     document.getElementById("b3").style.borderBottomWidth = "2px ";
     document.getElementById("b4").style.borderBottomWidth = "2px ";
+    document.getElementById("b5").style.borderBottomWidth = "2px ";
+    document.body.style.backgroundColor = "white";
+  }
+  function project() {
+    document.getElementById("trend").style.display = "none";
+    document.getElementById("new").style.display = "none";
+    document.getElementById("about").style.display = "none";
+    document.getElementById("project").style.display = "";
+    document.getElementById("b1").style.borderBottomWidth = "2px ";
+    document.getElementById("b2").style.borderBottomWidth = "2px ";
+    document.getElementById("b3").style.borderBottomWidth = "8px ";
+    document.getElementById("b4").style.borderBottomWidth = "2px ";
+    document.getElementById("b5").style.borderBottomWidth = "2px ";
+    document.body.style.backgroundColor = "white";
   }
   function about() {
+    document.getElementById("trend").style.display = "none";
     document.getElementById("project").style.display = "none";
     document.getElementById("new").style.display = "none";
     document.getElementById("about").style.display = "";
     document.getElementById("b1").style.borderBottomWidth = "2px";
     document.getElementById("b2").style.borderBottomWidth = "2px ";
-    document.getElementById("b3").style.borderBottomWidth = "8px ";
+    document.getElementById("b3").style.borderBottomWidth = "2px ";
     document.getElementById("b4").style.borderBottomWidth = "2px ";
+    document.getElementById("b5").style.borderBottomWidth = "8px ";
+    document.body.style.backgroundColor = "#f2f6fa";
   }
   function ref() {
     window.location.reload();
-  }
-</script>
-<script>
-  //DisunicLogic
-  window.onscroll = function() {
-      scrollFunction()
-  };
-
-  function scrollFunction() {
-      if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
-          document.getElementById("hd").style.boxShadow = "0px 6px 6px 0 #8e8e8e";
-      } else {
-          document.getElementById("hd").style.boxShadow = "0 0 0 0 white";
-      }
   }
 </script>

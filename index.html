@@ -82,7 +82,7 @@
             document.getElementById("promt").style.marginTop = "80px";
         }
     </script>
-    <script>
+    <!-- <script>
         //DisunicLogic
         window.onscroll = function() {
             scrollFunction()
@@ -90,21 +90,22 @@
 
         function scrollFunction() {
             if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                document.getElementById("navbar").style.background = "linear-gradient(45deg, rgb(41 42 56 / 99%), rgb(47 68 141))";
+                document.getElementById("navbar").style.background = "rgb(0 0 0 / 0%)";
+                document.getElementById("navbar").style.filter = "rgb(0 0 0 / 0%)";
             } else {
                 document.getElementById("navbar").style.background = "transparent";
 
             }
-        }
+        } -->
     </script>
 </head>
 <body class="light" onload="vib()" >
     
     <nav id="navbar">
-        <img src="./favicon.ico" id="navfav" alt="" style="width: 60px;height: 60px;margin: auto;">
+        <img draggable="false" src="./favicon.ico" id="navfav" alt="" style="width: 60px;height: 60px;margin: auto;">
         <div style="width: 100%; text-align: end;">
+            <button onclick="disuniclink">Disunic</button>
             <button onclick="disunicxlink()">DisunicX</button>
-            <button onclick="noteeditorlink()">Note Editor</button>
             <button onclick="settingsopen()" style="margin-right: 17px;" id="stbtnop">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-layout-sidebar-inset" viewBox="0 0 16 16">
                     <path d="M14 2a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h12zM2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"/>
@@ -119,13 +120,13 @@
         </button>
         </div>
     </nav>
-    <div class="mass" id="mass">
+    <!-- <div class="mass" id="mass">
         <div class="masss" id="mus">
             <p style="text-align: center ;font-size: 14px; font-weight: 700;">Disunic Android App Available😎 <a id="tr" href="./download-disunic.html">Download Now</a><button onclick="clmass()" style="margin-left: 10px;">Close</button></p>
         </div>
-    </div>
+    </div> -->
     <header class="banner">
-        <div style="position: fixed;width: 100%;margin-top: 165px;text-align: end;justify-content: end;display: none;transition: 1s;" id="promt">
+        <div style="position: fixed;width: 100%;margin-top: 74px;text-align: end;justify-content: end;display: none;transition: 1s;animation: rt 1s;" id="promt">
             <div class="promt" id="promt">
                 <p onclick="git()">GitHub</p>
                 <!-- <p onclick="donate()">Donate Us</p> -->
@@ -135,31 +136,31 @@
             </div>
         </div>
         <div class="logo">
-            <a href=""><img id="favlo" src="./favicon.png" alt="Logo" title="Disunic.com"></a>
+            <a href=""><img draggable="false"  id="favlo" src="./favicon.png" alt="Logo" title="Disunic.com"></a>
         </div>
         <div class="Text1">
             <p>Disunic</p>
         </div>
         <div class="Text2">
-            <p>The Most Advanced Cyber Security Website | Ever</p>
+            <p draggable="true">The Most Advanced Usable Softwares We Create For You | Ever</p>
         </div>
-        <div class="Download"><a href="./download-disunic.html"><button class="d-btn" title="Download Tools">Download</button></a></div>
+        <div class="Download" draggable="true"><a href="./download-disunic.html"><button class="d-btn" title="Download Tools">Download</button></a></div>
         <div class="show-down">
             <div></div>
         </div>
         </div>
     </header>
     <section>
-        <div class="toggle-switch">
+        <!-- <div class="toggle-switch">
             <p>Dark</p><span><label class="switch"><input id="theme-switch" type="checkbox"><span class="slider round"></span></label>
             </span>
             <p>Light</p>
-        </div>
+        </div> -->
         <div id="content" class="card">
-            <h2>DisunicX Browser</h2>
+            <h2 id="d">DisunicX Browser</h2>
             <div id="flx">
                 <p>Striking the perfect balance between privacy and usability.</p>
-                <img style="margin-left: 10px;width: 130px;height: 130px;" src="./conimg/disunicx.png" alt="DisunicX">
+                <img draggable="false"  style="margin-left: 10px;width: 130px;height: 130px;" src="./conimg/disunicx.png" alt="DisunicX">
             </div>
             <button onclick="disunicxlink()">Know More</button>
             <p class="avail" id="avail">Available on - Android , Windows , Linux</p>
@@ -170,7 +171,7 @@
             <h2>Note Editor</h2>
             <div id="flx">
                 <p>Note Editor is a text editor for the Desktop Environment.</p>
-                <img src="./conimg/noteeditor.png" alt="Note Editor" id="imgnote" class="imgnote">
+                <img draggable="false"  src="./conimg/noteeditor.png" alt="Note Editor" id="imgnote" class="imgnote">
             </div>
             <button onclick="noteeditorlink()">Know More</button>
             <p class="avail" id="avail">Available on - Windows , Linux</p>
@@ -180,7 +181,7 @@
             <h2>Disunic Wikipedia</h2>
             <div id="flx">
                 <p>A secure Encyclopedia provides from Disunic.</p>
-                <img src="./conimg/wikipedia.png" alt="Wikipedia" id="imgwiki">
+                <img draggable="false"  src="./conimg/wikipedia.png" alt="Wikipedia" id="imgwiki">
             </div>
             <button onclick="dwikilink()">Know More</button>
             <p class="avail" id="avail">Available on - Android</p>
@@ -190,7 +191,7 @@
             <h2>Disunic Ocean</h2>
             <div id="flx">
                 <p>A Cloud Based Multiweb Application.</p>
-                <img src="./conimg/disunicocean.png" alt="Ocean" id="imgwiki" style="border-radius: 10px;">
+                <img draggable="false"  src="./conimg/disunicocean.png" alt="Ocean" id="imgwiki" style="border-radius: 10px;">
             </div>
             <button onclick="disunicocean()">Know More</button>
             <p class="avail" id="avail">Available on - Android</p>
@@ -205,7 +206,7 @@
         <!-- Navigation -->
         <div id="nav" class="nav">
             <p><a>Disunic Corporation</a> - 2022 All Rights Reserved</p>
-            <p style="margin-top:-25px">UI Version - 5.0.0</p>
+            <p style="margin-top:-25px">UI Version - 5.0.345</p>
             <p onclick="india()" style="width: fit-content;
             padding: 15px;
             margin: auto;

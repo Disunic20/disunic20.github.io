@@ -1,10 +1,15 @@
     @media (min-width: 200px){
         .banner{
-            background-image: url("./animbackwebp/banner.webp");
+            background-image: url("./animbackwebp/disunicbanner.webp");
+            background-position: bottom;
         }
     }
     @media (min-width: 250px){
-        
+        /* .Text2{
+            margin: auto;
+            margin-top: 30px;
+            width: ;
+        } */
     }
     @media (min-width: 340px){
         #flx img{
@@ -19,6 +24,9 @@
         #flx #imgwiki{
             width: 140px;
             height: 135px;
+        }
+        .avail{
+            width: 80%;
         }
     }
     @media (min-width: 370px){
@@ -44,6 +52,9 @@
             width: 180px;
             height: 180px;
         }
+        .avail{
+            width: fit-content;
+        }
     }
     @media (min-width: 486px){
         
@@ -55,7 +66,8 @@
     }
     @media (min-width: 610px){
         .banner{
-            background-image: url("./animbackwebp/banner1.webp");
+            background-image: url("./animbackwebp/disunicbanner.webp");
+            background-position: ;
         }
     }
     @media (min-width: 682px){
@@ -69,5 +81,21 @@
         
     }
     @media (min-width: 1000px){
-       
+       .banner .logo{
+           text-align: left;
+           margin-left: 213px;
+       }
+       .banner .Text1{
+            text-align: left;
+            margin-left: 180px;
+       }
+       .banner .Text2{
+        text-align: left;
+        width: 45%;
+        margin-left: 30px;
+       }
+       .banner .Download{
+        text-align: left;
+        margin-left: 40px;
+       }
     }

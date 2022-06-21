@@ -29,7 +29,7 @@
         color: rgb(0, 0, 0);
     }
     .light{
-        background:linear-gradient(#5e80ee,#4be1ec);
+        /* background:linear-gradient(#5e80ee,#4be1ec); */
     }
     .dark{
         background: linear-gradient(#5e5e5e,#7a7a7a);
@@ -94,15 +94,32 @@
     .banner{
         height: 800px;
         background-blend-mode: multiply;
-        background-color: rebeccapurple;
+        /* background-color: rebeccapurple; */
+        background: rgb(113, 68, 164);
         text-align: center;
         background-repeat: no-repeat;
         background-size: cover;
-        transition: 1s;    
+        /* transition: 15s;    */
+        animation: bn 15s infinite;
+        /* background-attachment: fixed; */
+    }
+    @keyframes bn {
+        0%{
+            background-color:  rgb(13, 45, 255);
+        }
+        50%{
+            background-color: rgb(113, 68, 164);
+        }
+        70%{
+            background-color: rgb(117, 3, 246);
+        }
+        100%{
+            background-color: rgb(13, 45, 255);
+        }
     }
     .logo img{
         width: 90px;
-        margin-top: 190px;
+        margin-top: 130px;
         border-radius: 5px;
         transition: 1s;
         animation: cont 1s;
@@ -110,13 +127,13 @@
     .Text1 p{
         font-size: 40px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        margin-top: 60px;
+        margin-top: 50px;
         color: white;
         transition: 1s;
     }
     .Text2 p{
         font-size: 35px;
-        margin-top: 60px;
+        margin-top: 30px;
         color: #f4f4f4;
         font-weight: 700;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -128,7 +145,7 @@
         color: rgb(255, 255, 255);
         font-size: 25px;
         font-weight: 600;
-        border: 2px solid;
+        border: 3px solid;
         cursor: pointer;
         margin: 4px;
         outline: 0;
@@ -146,23 +163,41 @@
     }
     .show-down{
         text-align: center;
-        margin-top: 90px;
+        animation: sd 4s ;
+        transition: 30s;
+        animation-iteration-count: infinite;
+        /* position: relative; */
     }
     .show-down div{
         display: block;
+        position: relative;
         width: 15px;
         height: 15px;
-        transform: rotate(45deg);
         border-right: 3px solid whitesmoke;
         border-bottom: 3px solid whitesmoke;
         margin: auto;
+        transform: rotate(45deg);
+        /* transition: 4s; */
+    }
+    @keyframes sd {
+        0%{
+            margin-top: 10px;
+        }
+        70%{
+            margin-top: 160px;
+        }
+        100%{
+            margin-top: 10px;
+        }
+    }
+    #navbar{
+        backdrop-filter: blur(12px);
     }
     nav{
         height: 70px;
         position: fixed;
         width: 100%;
         box-shadow: 0px 0.1px 4px 0px rgb(162 194 255);
-        /* transition: background 300ms; */
         padding: 6px;
         text-align: center;
         display: flex;
@@ -188,14 +223,24 @@
         justify-content: center;
         margin-top: 25px;
         background: transparent;
-        color: white;
-        font-weight: 600;
+        color: rgb(0, 153, 255);
+        font-weight: 700;
         border: none;
+        letter-spacing: 1px;
         font-size: 15px;
+    }
+    @keyframes rt {
+        0%{
+            height: 0px;
+        }
+        100%{
+            height: auto;
+        }
+        
     }
     nav button:hover{
         text-decoration: underline;
-        color: #7b7fff;
+        color: #4397ff;
     }
     section h2{
         color: #3e44ff;
@@ -242,14 +287,16 @@
         margin-top: 30px;
         margin-bottom: 20px;
     }
-    #content{
+    .card{
         background-color: rgb(255, 255, 255);
-        width: 98%;
+        width: 93%;
         margin: auto;
-        margin-top: 8px;
+        margin-top: 30px;
+        padding: 8px 5px 8px 5px;
         margin-bottom: 9px;
-        border-radius: 6px;
+        border-radius: 10px;
         transition: background 0.3s;
+        box-shadow: 0px 2px 10px 3px rgb(175 175 175);
     } 
 
     @keyframes cont {
@@ -258,7 +305,7 @@
             opacity: 0;
         }
         100%{
-            margin-top: 190px;
+            margin-top: 130px;
             opacity: 100;
         }
     }
@@ -266,7 +313,10 @@
     .nav{
         padding: 1px;
         border: none;
-        background: #f2f6fa;
+        color: white;
+        box-shadow: 0 30px 80px rgb(54 123 240);
+        margin-top: 15px;
+        background: rgb(23 19 33);
     }
     .nav p{
         font-size: 15px;
@@ -274,6 +324,7 @@
         padding: 20px 0px 20px 0px;
         font-weight: 700;
         margin: 0px;
+        margin-top: 10px;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
     }
@@ -315,7 +366,7 @@
         transition: margin-top 1s;
     }
     .promt p{
-        background: linear-gradient(23deg, #c33154, #450dee);
+        background: linear-gradient(23deg, rgb(30 22 22), rgb(62 62 62));;
         color: white;
         padding: 10px;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -324,6 +375,7 @@
         border-radius: 5px;
         font-weight: 700;
         cursor: pointer;
+
     }
     @keyframes fadein {
         0%{

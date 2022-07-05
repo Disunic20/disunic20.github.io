@@ -5,6 +5,9 @@
     ::-webkit-scrollbar{
         display: none;
     }
+    #onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-theme-default .onesignal-bell-launcher-button svg .background{
+        fill:blue;
+    }
     :root {
     --toggle-light: hsl(230, 22%, 74%);
     --toggle-dark: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
